@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import "./globals.css";
 import MainMenu from './components/MainMenu'
 import Footer from './components/Footer'
@@ -33,8 +32,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b bg-white">
-          <div className="container mx-auto px-4 py-4"> 
+        <header className="border-b">
+          <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <Link href="/">
