@@ -2,6 +2,7 @@
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Foto() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +36,11 @@ export default function Foto() {
               setIsOpen(true);
             }}
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
-              className="object-cover w-full h-full rounded-lg shadow-md hover:opacity-90 transition-opacity"
+              fill
+              className="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
             />
           </div>
         ))}
