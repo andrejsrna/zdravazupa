@@ -1,43 +1,80 @@
 import Benefits from "../components/Benefits";
 import ZP from "../components/ZP";
+import { Fragment } from "react";
 
 export default function AmbulanciaPreDospelych() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-5xl font-bold mb-12 text-center">Ambulancia pre dospelých</h1>
+        <h1 className="text-5xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
+          Ambulancia pre dospelých
+        </h1>
         
-        <section className="mb-12 bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-semibold mb-6 text-primary">OTVORILI SME PRE VÁS NOVÚ AMBULANCIU</h2>
+        <section className="mb-12 bg-white rounded-xl shadow-lg p-8 transform hover:scale-[1.02] transition-transform">
+          <h2 className="text-3xl font-semibold mb-6 text-primary flex items-center gap-2">
+            <span className="inline-block w-2 h-8 bg-primary rounded-full"></span>
+            OTVORILI SME PRE VÁS NOVÚ AMBULANCIU
+          </h2>
           <div className="space-y-3">
-            <p className="text-xl font-medium">MUDr. Jana Idunková, MUDr. Mariana Čapeľová</p>
-            <p className="text-gray-600">Poskytovateľ: Zdravá župa, s. r. o.</p>
-            <p className="text-gray-600">Adresa ambulancie: Študentská 3579/16, 917 08 Trnava</p>
+            <p className="text-xl font-medium bg-gradient-to-r from-primary/10 to-transparent p-2 rounded-lg">
+              MUDr. Jana Idunková, MUDr. Mariana Čapeľová
+            </p>
+            <p className="text-gray-600 flex items-center gap-2">
+              <span className="text-primary">●</span> Poskytovateľ: Zdravá župa, s. r. o.
+            </p>
+            <p className="text-gray-600 flex items-center gap-2">
+              <span className="text-primary">●</span> Adresa ambulancie: Študentská 3579/16, 917 08 Trnava
+            </p>
           </div>
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <section className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-semibold mb-4 text-primary">KONTAKT</h2>
+          <section className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 className="text-2xl font-semibold mb-4 text-primary flex items-center gap-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              KONTAKT
+            </h2>
             <div className="space-y-3">
-              <p className="flex items-center"><span className="w-24">Pevná linka:</span> 033/20 23 523</p>
-              <p className="flex items-center"><span className="w-24">Mobil:</span> 0910709355</p>
-              <p className="flex items-center"><span className="w-24">E-mail:</span> vseobecnaambulancia@zdravazupa.sk</p>
-              <p className="flex items-center"><span className="w-24">E-mail:</span> sestra@zdravazupa.sk</p>
+              <p className="flex items-center bg-gray-50 p-2 rounded hover:bg-gray-100 transition-colors">
+                <span className="w-24 font-medium">Pevná linka:</span> 033/20 23 523
+              </p>
+              <p className="flex items-center bg-gray-50 p-2 rounded hover:bg-gray-100 transition-colors">
+                <span className="w-24 font-medium">Mobil:</span> 0910709355
+              </p>
+              <p className="flex items-center bg-gray-50 p-2 rounded hover:bg-gray-100 transition-colors">
+                <span className="w-24 font-medium">E-mail:</span> vseobecnaambulancia@zdravazupa.sk
+              </p>
+              <p className="flex items-center bg-gray-50 p-2 rounded hover:bg-gray-100 transition-colors">
+                <span className="w-24 font-medium">E-mail:</span> sestra@zdravazupa.sk
+              </p>
             </div>
           </section>
 
-          <section className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-2xl font-semibold mb-4 text-primary">ORDINAČNÉ HODINY</h2>
-            <p className="mb-4 text-gray-600">platnosť od: 01.08.2022</p>
+          <section className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 className="text-2xl font-semibold mb-4 text-primary flex items-center gap-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              ORDINAČNÉ HODINY
+            </h2>
+            <p className="mb-4 text-gray-600 italic">platnosť od: 01.08.2022</p>
             <div className="grid grid-cols-2 gap-2">
-              <div className="font-medium">Pondelok:</div><div>7:00 – 19:00</div>
-              <div className="font-medium">Utorok:</div><div>7:00 – 19:00</div>
-              <div className="font-medium">Streda:</div><div>7:00 – 19:00</div>
-              <div className="font-medium">Štvrtok:</div><div>7:00 – 19:00</div>
-              <div className="font-medium">Piatok:</div><div>7:00 – 16:00</div>
-              <div className="font-medium">Sobota:</div><div>neordinuje</div>
-              <div className="font-medium">Nedeľa:</div><div>neordinuje</div>
+              {[
+                ["Pondelok", "7:00 – 19:00"],
+                ["Utorok", "7:00 – 19:00"],
+                ["Streda", "7:00 – 19:00"],
+                ["Štvrtok", "7:00 – 19:00"],
+                ["Piatok", "7:00 – 16:00"],
+                ["Sobota", "neordinuje"],
+                ["Nedeľa", "neordinuje"]
+              ].map(([day, hours], i) => (
+                <Fragment key={i}>
+                  <div className="font-medium bg-gray-50 p-2 rounded">{day}:</div>
+                  <div className="bg-gray-50 p-2 rounded text-primary">{hours}</div>
+                </Fragment>
+              ))}
             </div>
           </section>
         </div>
@@ -165,7 +202,7 @@ export default function AmbulanciaPreDospelych() {
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Spirometria na žiadosť pacienta mimo indikácie<br/>(na vlastnú žiadosť pacienta, výsledok do 2 pracovných dní)</td>
-                  <td className="text-right p-3">30,- €</td>
+                  <td className="text-right p-3">30,- </td>
                   <td className="text-right p-3">40,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">

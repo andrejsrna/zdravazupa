@@ -1,17 +1,28 @@
 import Link from "next/link";
 import Benefits from "./components/Benefits";
 import ZP from "./components/ZP";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">Moderné zdravotnícke zariadenie v Trnave</h1>
-          <p className="text-lg text-muted-foreground mb-4">
-            Trnavský samosprávny kraj v piatok 21. októbra 2022 predstavil priestory nového zdravotníckeho strediska, ktoré sa nachádza v zrekonštruovaných priestoroch bývalého školského internátu na Študentskej 16 v Trnave.
-          </p>
+        <section className="flex flex-col md:flex-row items-center gap-8 mb-16">
+          <div className="md:w-1/2 text-left">
+            <h1 className="text-4xl font-bold mb-4">Moderné zdravotnícke zariadenie v Trnave</h1>
+            <p className="text-lg text-muted-foreground">
+              Trnavský samosprávny kraj v piatok 21. októbra 2022 predstavil priestory nového zdravotníckeho strediska, ktoré sa nachádza v zrekonštruovaných priestoroch bývalého školského internátu na Študentskej 16 v Trnave.
+            </p>
+          </div>
+          <div className="md:w-1/2 relative h-[300px]">
+            <Image
+              src="/budova.jpg"
+              alt="Budova zdravotníckeho zariadenia"
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
+          </div>
         </section>
 
         {/* Services Section */}
