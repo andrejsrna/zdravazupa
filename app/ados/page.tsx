@@ -1,89 +1,99 @@
 export default function ADOS() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-4">Agentúra domácej ošetrovateľskej starostlivosti Zdravá župa, s.r.o.</h1>
+        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+          <h1 className="text-4xl font-bold mb-4 text-primary">Agentúra domácej ošetrovateľskej starostlivosti Zdravá župa, s.r.o.</h1>
 
-        <section className="mb-12">
-          <p className="text-lg mb-6">
-            Služby ADOS sú určené čiastočne alebo úplne imobilným pacientom, ktorí potrebujú odbornú ošetrovateľskú alebo rehabilitačnú starostlivosť. Väčšina pacientov, ktorí využívajú služby ADOS, je chronicky chorých. Domáce ošetrovanie však poskytujú aj pri náhlych, či krátkodobých chorobách, po prepustení z hospitalizácie, po operáciách, prípadne po zákrokoch v rámci jednodňovej chirurgie, ktoré vyžadujú následnú ošetrovateľskú alebo rehabilitačnú starostlivosť.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Pred prvou návštevou si prosím pripravte:</h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Posledné nálezy od lekára (prepúšťaciu nemocničnú správu, ambulantný nález a podobne), poprípade nám ich zašlite e-mailom.</li>
-            <li>Indikujúcim lekárom je Váš všeobecný lekár. Akákoľvek starostlivosť sa má vykonávať pod dohľadom lekára, preto by nemalo chýbať odporúčanie od Vášho všeobecného lekára alebo iného odborného lekára, ktorý špecifikuje rozsah činností vykonávaných sestrou v domácom prostredí a odporučí kontroly pacienta.</li>
-            <li>Váš obvodný lekár by Vám mal vypísať návrh na poskytovanie ošetrovateľskej starostlivosti.</li>
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Priebeh prvej návštevy:</h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>naštudujeme si lekárske správy;</li>
-            <li>pacient absolvuje vyšetrenie zdravotnou sestrou;</li>
-            <li>vypíšeme ošetrovateľskú dokumentáciu vrátane ošetrovateľských cieľov a plánov;</li>
-            <li>začneme poskytovať služby.</li>
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Základné výkony v rámci domáceho ošetrovania sestrami</h2>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Ošetrovanie rán, preležanín a vredov predkolenia</li>
-            <li>preväzy rán</li>
-            <li>ošetrovanie stómií</li>
-            <li>podávanie injekcií a infúzií</li>
-            <li>starostlivosť o centrálny venózny katéter alebo venóznu linku</li>
-            <li>starostlivosť o epidurálny katéter</li>
-            <li>starostlivosť o sondu a výživa pacienta sondou</li>
-            <li>starostlivosť o ezotracheálnu, nasotracheálnu a tracheostomickú kanylu</li>
-            <li>cievkovanie (len ženy)</li>
-            <li>starostlivosť o močový katéter</li>
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">ORDINAČNÉ HODINY</h2>
-          <p className="mb-4">platnosť od: 01.10.2024</p>
-          <div className="grid grid-cols-2 gap-4">
-            <div>Pondelok:</div><div>8:00 – 16:00</div>
-            <div>Utorok:</div><div>8:00 – 16:00</div>
-            <div>Streda:</div><div>14:00 – 19:00</div>
-            <div>Štvrtok:</div><div>8:00 – 16:00</div>
-            <div>Piatok:</div><div>7:30 – 16:00</div>
-            <div>Sobota:</div><div>neordinuje</div>
-            <div>Nedeľa:</div><div>neordinuje</div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">KONTAKTUJTE NÁS!</h2>
-          <div className="space-y-4">
-            <div>
-              <p className="font-semibold">ZAVOLAJTE NÁM NA:</p>
-              <p>033/20 23 523</p>
-              <p>0908 429 588</p>
+          <section className="mb-12">
+            <div className="bg-blue-50 rounded-lg p-6 shadow-sm">
+              <p className="text-lg mb-6">
+                Služby ADOS sú určené čiastočne alebo úplne imobilným pacientom, ktorí potrebujú odbornú ošetrovateľskú alebo rehabilitačnú starostlivosť. Väčšina pacientov, ktorí využívajú služby ADOS, je chronicky chorých. Domáce ošetrovanie však poskytujú aj pri náhlych, či krátkodobých chorobách, po prepustení z hospitalizácie, po operáciách, prípadne po zákrokoch v rámci jednodňovej chirurgie, ktoré vyžadujú následnú ošetrovateľskú alebo rehabilitačnú starostlivosť.
+              </p>
             </div>
-            <div>
-              <p className="font-semibold">ALEBO NÁM NAPÍŠTE NA:</p>
-              <p>ados@zdravazupa.sk</p>
-            </div>
+          </section>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <section className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Pred prvou návštevou si prosím pripravte:</h2>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Posledné nálezy od lekára (prepúšťaciu nemocničnú správu, ambulantný nález a podobne), poprípade nám ich zašlite e-mailom.</li>
+                <li>Indikujúcim lekárom je Váš všeobecný lekár. Akákoľvek starostlivosť sa má vykonávať pod dohľadom lekára, preto by nemalo chýbať odporúčanie od Vášho všeobecného lekára alebo iného odborného lekára, ktorý špecifikuje rozsah činností vykonávaných sestrou v domácom prostredí a odporučí kontroly pacienta.</li>
+                <li>Váš obvodný lekár by Vám mal vypísať návrh na poskytovanie ošetrovateľskej starostlivosti.</li>
+              </ul>
+            </section>
+
+            <section className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-2xl font-semibold mb-4 text-primary">Priebeh prvej návštevy:</h2>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>naštudujeme si lekárske správy;</li>
+                <li>pacient absolvuje vyšetrenie zdravotnou sestrou;</li>
+                <li>vypíšeme ošetrovateľskú dokumentáciu vrátane ošetrovateľských cieľov a plánov;</li>
+                <li>začneme poskytovať služby.</li>
+              </ul>
+            </section>
           </div>
-        </section>
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">CENNÍK</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left p-2">Úkon</th>
-                  <th className="text-right p-2">Cena</th>
-                </tr>
-              </thead>
-              <tbody>
+
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">Základné výkony v rámci domáceho ošetrovania sestrami</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Ošetrovanie rán, preležanín a vredov predkolenia</li>
+                <li>preväzy rán</li>
+                <li>ošetrovanie stómií</li>
+                <li>podávanie injekcií a infúzií</li>
+                <li>starostlivosť o centrálny venózny katéter alebo venóznu linku</li>
+              </ul>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>starostlivosť o epidurálny katéter</li>
+                <li>starostlivosť o sondu a výživa pacienta sondou</li>
+                <li>starostlivosť o ezotracheálnu, nasotracheálnu a tracheostomickú kanylu</li>
+                <li>cievkovanie (len ženy)</li>
+                <li>starostlivosť o močový katéter</li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">ORDINAČNÉ HODINY</h2>
+            <p className="mb-4 text-gray-600">platnosť od: 01.10.2024</p>
+            <div className="grid grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg">
+              <div className="font-medium">Pondelok:</div><div>8:00 – 16:00</div>
+              <div className="font-medium">Utorok:</div><div>8:00 – 16:00</div>
+              <div className="font-medium">Streda:</div><div>14:00 – 19:00</div>
+              <div className="font-medium">Štvrtok:</div><div>8:00 – 16:00</div>
+              <div className="font-medium">Piatok:</div><div>7:30 – 16:00</div>
+              <div className="font-medium">Sobota:</div><div>neordinuje</div>
+              <div className="font-medium">Nedeľa:</div><div>neordinuje</div>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">KONTAKTUJTE NÁS!</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">ZAVOLAJTE NÁM NA:</p>
+                <p className="text-xl">033/20 23 523</p>
+                <p className="text-xl">0908 429 588</p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <p className="font-semibold text-blue-800">ALEBO NÁM NAPÍŠTE NA:</p>
+                <p className="text-xl">ados@zdravazupa.sk</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="text-left p-2 border-b">Úkon</th>
+                    <th className="text-right p-2 border-b">Cena</th>
+                  </tr>
+                </thead>
+                <tbody>
                 <tr className="border-b font-semibold">
                   <td className="p-2" colSpan={2}>Cenník výkonov mimo úhrady zdravotnej poisťovne</td>
                 </tr>
@@ -319,9 +329,10 @@ export default function ADOS() {
                   <td className="text-right p-2">10,- €</td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-        </section>
+              </table>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );

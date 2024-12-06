@@ -1,3 +1,12 @@
+export const metadata = {
+  title: 'Pre verejnosť | Zdravá župa',
+  description: 'Informácie o spoločnosti Zdravá župa s.r.o., poskytovateľovi zdravotnej starostlivosti v Trnavskom samosprávnom kraji. Ponúkame všeobecnú a špecializovanú ambulantnú starostlivosť, domácu ošetrovateľskú starostlivosť a hospicovú starostlivosť.',
+  keywords: 'zdravotná starostlivosť, Trnava, TTSK, ambulancia, kardiológia, neurológia, domáca starostlivosť, hospic, pohotovosť'
+}
+
+
+
+
 export default function Verejnost() {
   return (
     <div className="min-h-screen bg-background">
@@ -89,13 +98,6 @@ export default function Verejnost() {
             </div>
           </section>
         </div>
-
-        <footer className="text-center text-sm text-muted-foreground mt-12">
-          <p>Zriaďovateľ: Trnavský samosprávny kraj</p>
-          <p>Kontakt: Zdravá župa, s. r. o., Starohájska 10 917 01 Trnava</p>
-          <p>IČO: 53708997, DIČ: 2121488468</p>
-          <p>Okresný súd Trnava, oddiel: Sro, vložka č. 48993/T</p>
-        </footer>
       </div>
     </div>
   );
