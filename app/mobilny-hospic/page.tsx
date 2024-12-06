@@ -13,23 +13,23 @@ export default function MobilnyHospic() {
                 <tbody>
                   <tr className="border-b">
                     <td className="p-2">Pondelok</td>
-                    <td className="text-right p-2">neordinuje</td>
+                    <td className="text-right p-2">8:00 – 16:00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-2">Utorok</td>
-                    <td className="text-right p-2">15:30 – 18:30</td>
+                    <td className="text-right p-2">15:00 – 19:00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-2">Streda</td>
-                    <td className="text-right p-2">8:30 – 13:00</td>
+                    <td className="text-right p-2">8:00 – 16:00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-2">Štvrtok</td>
-                    <td className="text-right p-2">8:30 – 15:30</td>
+                    <td className="text-right p-2">8:00 – 16:00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-2">Piatok</td>
-                    <td className="text-right p-2">neordinuje</td>
+                    <td className="text-right p-2">8:00 – 16:00</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-2">Sobota</td>

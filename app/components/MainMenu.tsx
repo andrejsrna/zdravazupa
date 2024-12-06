@@ -28,7 +28,7 @@ export default function MainMenu() {
       </button>
 
       <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent z-50`}>
-        <ul className="flex flex-col md:flex-row gap-6 p-4 md:p-0">
+        <ul className="flex flex-col md:flex-row gap-6 p-4 md:p-0 text-gray-900">
           <li className="relative group">
             <Link href="/sluzby" className="hover:text-primary block">
               Služby

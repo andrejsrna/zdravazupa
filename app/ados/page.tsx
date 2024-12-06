@@ -47,13 +47,13 @@ export default function ADOS() {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">ORDINAČNÉ HODINY</h2>
-          <p className="mb-4">platnosť od: 18.10.2022</p>
+          <p className="mb-4">platnosť od: 01.10.2024</p>
           <div className="grid grid-cols-2 gap-4">
             <div>Pondelok:</div><div>8:00 – 16:00</div>
             <div>Utorok:</div><div>8:00 – 16:00</div>
-            <div>Streda:</div><div>8:00 – 16:00</div>
+            <div>Streda:</div><div>14:00 – 19:00</div>
             <div>Štvrtok:</div><div>8:00 – 16:00</div>
-            <div>Piatok:</div><div>8:00 – 16:00</div>
+            <div>Piatok:</div><div>7:30 – 16:00</div>
             <div>Sobota:</div><div>neordinuje</div>
             <div>Nedeľa:</div><div>neordinuje</div>
           </div>
