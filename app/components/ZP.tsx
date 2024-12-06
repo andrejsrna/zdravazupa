@@ -10,7 +10,7 @@ export default function ZdravotnePoistovne() {
           <div className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform hover:scale-105">
             <div className="aspect-square relative bg-white p-8">
               <Image
-                src="/vszplogo.jpg"
+                src="/vszplogo.JPG"
                 alt="Všeobecná zdravotná poisťovňa"
                 fill
                 className="object-contain p-4 transition-opacity group-hover:opacity-90"

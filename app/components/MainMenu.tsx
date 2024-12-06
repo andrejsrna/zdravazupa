@@ -7,7 +7,7 @@ export default function MainMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="relative">
       {/* Mobile menu button */}
       <button 
         className="md:hidden p-2"
@@ -27,13 +27,13 @@ export default function MainMenu() {
         </svg>
       </button>
 
-      <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent z-50`}>
+      <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block fixed md:relative left-0 w-full md:w-auto bg-white md:bg-transparent z-50`}>
         <ul className="flex flex-col md:flex-row gap-6 p-4 md:p-0 text-gray-900">
           <li className="relative group">
-            <Link href="/sluzby" className="hover:text-primary block">
+            <Link href="#" className="hover:text-primary block">
               Služby
             </Link>
-            <ul className="md:absolute static md:hidden group-hover:block bg-gray-900 text-white border rounded-lg shadow-lg p-2 space-y-2 min-w-[300px]">
+            <ul className="md:absolute static md:hidden group-hover:md:block bg-gray-900 text-white border rounded-lg shadow-lg p-2 space-y-2 min-w-[300px]">
               <li>
                 <Link href="/ambulancia-pre-dospelych" className="block hover:bg-primary/90 p-2 rounded">
                   Ambulancia pre dospelých
@@ -88,6 +88,6 @@ export default function MainMenu() {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   )
-} 
+}
