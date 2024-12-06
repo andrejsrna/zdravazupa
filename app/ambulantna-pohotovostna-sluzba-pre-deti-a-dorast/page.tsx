@@ -1,5 +1,22 @@
 import ZP from "../components/ZP";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ambulantná pohotovostná služba pre deti a dorast | Zdravá župa Trnava",
+  description: "Ambulantná pohotovostná služba pre deti a dorast v Trnave poskytuje zdravotnú starostlivosť pre pacientov zo spádových oblastí Trnava a Hlohovec.",
+  keywords: "pohotovosť, detská pohotovosť, LSPP, Trnava, Zdravá župa, ambulantná pohotovostná služba",
+  openGraph: {
+    title: "Ambulantná pohotovostná služba pre deti a dorast | Zdravá župa Trnava",
+    description: "Ambulantná pohotovostná služba pre deti a dorast v Trnave poskytuje zdravotnú starostlivosť pre pacientov zo spádových oblastí Trnava a Hlohovec.",
+    url: "https://zdravazupa.sk/ambulantna-pohotovostna-sluzba-pre-deti-a-dorast",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function AmbulantnaPohotovostPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">

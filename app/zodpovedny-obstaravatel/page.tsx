@@ -1,3 +1,20 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Zodpovedný obstarávateľ | Zdravá župa",
+  description: "Zdravá župa, s.r.o. získala ocenenie Zodpovedný verejný obstarávateľ za rok 2022 od portálu TRANSPAREX za výsledky v oblasti verejného obstarávania.",
+  keywords: "zodpovedný obstarávateľ, verejné obstarávanie, TRANSPAREX, Zdravá župa, ocenenie",
+  openGraph: {
+    title: "Zodpovedný obstarávateľ | Zdravá župa",
+    description: "Zdravá župa, s.r.o. získala ocenenie Zodpovedný verejný obstarávateľ za rok 2022 od portálu TRANSPAREX.",
+    url: "https://zdravazupa.sk/zodpovedny-obstaravatel",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function ZodpovednyObstaravatel() {
   return (
     <div className="container mx-auto px-4 py-8">

@@ -1,3 +1,20 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ADOS | Zdravá župa",
+  description: "Agentúra domácej ošetrovateľskej starostlivosti poskytuje odbornú ošetrovateľskú a rehabilitačnú starostlivosť pacientom v domácom prostredí. Služby sú plne hradené zdravotnými poisťovňami.",
+  keywords: "ADOS, domáca ošetrovateľská starostlivosť, ošetrovanie rán, preväzy, injekcie, infúzie, Zdravá župa",
+  openGraph: {
+    title: "ADOS | Zdravá župa",
+    description: "Agentúra domácej ošetrovateľskej starostlivosti poskytuje odbornú ošetrovateľskú a rehabilitačnú starostlivosť pacientom v domácom prostredí.",
+    url: "https://zdravazupa.sk/ados",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function ADOS() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">

@@ -1,6 +1,25 @@
 import Benefits from "../components/Benefits";
+import Foto from "../components/Foto";
 import ZP from "../components/ZP";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Psycho-sociálne centrum | Zdravá župa",
+  description: "Nové moderné centrum poskytujúce psychiatrickú ambulanciu, ambulanciu klinického psychológa, psychiatrický stacionár a sociálne poradenstvo v Trnave.",
+  openGraph: {
+    title: "Psycho-sociálne centrum | Zdravá župa",
+    description: "Nové moderné centrum poskytujúce psychiatrickú ambulanciu, ambulanciu klinického psychológa, psychiatrický stacionár a sociálne poradenstvo v Trnave.",
+    images: [
+      {
+        url: "/images/og-psycho-socialne-centrum.jpg", // Make sure this image exists
+        width: 1200,
+        height: 630,
+        alt: "Psycho-sociálne centrum v Trnave",
+      },
+    ],
+  },
+};
 export default function PsychoSocialneCentrum() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
@@ -64,6 +83,8 @@ export default function PsychoSocialneCentrum() {
             </div>
           </section>
         </div>
+
+        <Foto />
 
         <section className="mb-12 bg-white rounded-xl shadow-lg p-8">
           <blockquote className="border-l-4 border-primary pl-4 italic text-gray-600">

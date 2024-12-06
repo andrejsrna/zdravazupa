@@ -14,11 +14,12 @@ export default function Home() {
               Trnavský samosprávny kraj v piatok 21. októbra 2022 predstavil priestory nového zdravotníckeho strediska, ktoré sa nachádza v zrekonštruovaných priestoroch bývalého školského internátu na Študentskej 16 v Trnave.
             </p>
           </div>
-          <div className="md:w-1/2 relative h-[300px]">
+          <div className="md:w-1/2 w-full relative h-[300px] md:h-[400px]">
             <Image
               src="/budova.jpg"
               alt="Budova zdravotníckeho zariadenia"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-lg"
               priority
             />

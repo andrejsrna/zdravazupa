@@ -1,3 +1,20 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kardiologická ambulancia | Zdravá župa Trnava",
+  description: "Kardiologická ambulancia v Trnave prijíma nových pacientov. Poskytujeme komplexnú kardiologickú starostlivosť v modernom zdravotníckom zariadení na Študentskej ulici.",
+  keywords: "kardiológia, kardiologická ambulancia, Trnava, Zdravá župa, kardiologické vyšetrenie, EKG, echokardiografia",
+  openGraph: {
+    title: "Kardiologická ambulancia | Zdravá župa Trnava",
+    description: "Kardiologická ambulancia v Trnave prijíma nových pacientov. Poskytujeme komplexnú kardiologickú starostlivosť v modernom zdravotníckom zariadení.",
+    url: "https://zdravazupa.sk/kardiologia-trnava",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function KardiologickaAmbulancia() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">

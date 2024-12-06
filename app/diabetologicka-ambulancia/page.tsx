@@ -1,6 +1,23 @@
 import Benefits from "../components/Benefits";
 import ZP from "../components/ZP";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diabetologická ambulancia | Zdravá župa Trnava",
+  description: "Diabetologická ambulancia v Trnave prijíma novodiagnostikovaných pacientov. Poskytujeme komplexnú diabetologickú starostlivosť v modernom zdravotníckom zariadení.",
+  keywords: "diabetológia, diabetologická ambulancia, Trnava, Zdravá župa, diabetologické vyšetrenie, diabetes, cukrovka",
+  openGraph: {
+    title: "Diabetologická ambulancia | Zdravá župa Trnava",
+    description: "Diabetologická ambulancia v Trnave prijíma novodiagnostikovaných pacientov. Poskytujeme komplexnú diabetologickú starostlivosť v modernom zdravotníckom zariadení.",
+    url: "https://zdravazupa.sk/diabetologicka-ambulancia",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function DiabetologickaAmbulancia() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">

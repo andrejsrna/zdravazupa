@@ -18,7 +18,8 @@
     "react-dom": "^19.0.0",
     "shadcn-ui": "^0.9.3",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.21.7"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,3 +1,23 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobilný hospic | Zdravá župa",
+  description: "Poskytujeme komplexnú paliatívnu starostlivosť pacientom s nevyliečiteľným ochorením priamo v pohodlí ich domova. Služby sú plne hradené zdravotnými poisťovňami.",
+  openGraph: {
+    title: "Mobilný hospic | Zdravá župa",
+    description: "Poskytujeme komplexnú paliatívnu starostlivosť pacientom s nevyliečiteľným ochorením priamo v pohodlí ich domova.",
+    images: [
+      {
+        url: "/images/og-mobilny-hospic.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mobilný hospic Zdravá župa",
+      },
+    ],
+  },
+};
+
+
 export default function MobilnyHospic() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">

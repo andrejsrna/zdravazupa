@@ -1,3 +1,20 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ochrana osobných údajov | Zdravá župa",
+  description: "Informácie o spracúvaní osobných údajov spoločnosťou Zdravá župa, s.r.o. v zmysle GDPR a zákona č. 18/2018 Z. z. o ochrane osobných údajov.",
+  keywords: "ochrana osobných údajov, GDPR, spracúvanie osobných údajov, Zdravá župa",
+  openGraph: {
+    title: "Ochrana osobných údajov | Zdravá župa",
+    description: "Informácie o spracúvaní osobných údajov spoločnosťou Zdravá župa, s.r.o.",
+    url: "https://zdravazupa.sk/ochrana-osobnych-udajov",
+    siteName: "Zdravá župa",
+    locale: "sk_SK",
+    type: "website",
+  }
+};
+
+
 export default function OchranaOsobnychUdajov() {
   return (
     <div className="min-h-screen bg-background">
