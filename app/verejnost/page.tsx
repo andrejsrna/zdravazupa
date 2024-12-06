@@ -53,10 +53,10 @@ export default function Verejnost() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Na stiahnutie</h2>
             <div className="space-y-2">
-              <a href="#" className="text-primary block">CV konateľka Zdravej župy</a>
-              <a href="#" className="text-primary block">Informácia o činnosti Zdravá župa s.r.o. 09-2021 až 02-2022</a>
-              <a href="#" className="text-primary block">Informácia o činnosti Zdravá župa s.r.o. 03-2022 až 12-2022</a>
-              <a href="#" className="text-primary block">Ocenenie Zodpovedný verejný obstarávateľ za rok 2022</a>
+              <a href="#" className="text-primary underline block">CV konateľka Zdravej župy</a>
+              <a href="/infoocinnost.pdf" className="text-primary underline block">Informácia o činnosti Zdravá župa s.r.o. 09-2021 až 02-2022</a>
+              <a href="/infoocinnostolder.pdf" className="text-primary underline block">Informácia o činnosti Zdravá župa s.r.o. 03-2022 až 12-2022</a>
+              <a href="/zodpovedny-obstaravatel" className="text-primary underline block">Ocenenie Zodpovedný verejný obstarávateľ za rok 2022</a>
             </div>
           </section>
 
@@ -66,10 +66,9 @@ export default function Verejnost() {
               V rámci transparentosti spoločnosti Zdravá župa s.r.o. si môžete pozrieť na nasledujúcich linkoch dôležité údaje.
             </p>
             <div className="space-y-2">
-              <a href="#" className="text-primary block">Zverejňovanie zmlúv, objednávok a faktúr do 31.3.2022</a>
-              <a href="#" className="text-primary block">Zverejňovanie objednávok a faktúr</a>
-              <a href="#" className="text-primary block">Zverejňovanie zmlúv</a>
-              <a href="#" className="text-primary block">Informácia o vydaných ochranných pracovných prostriedkoch</a>
+              <a href="https://crz.trnava-vuc.sk/1047065-sk/zdrava-zupa-sro/" className="text-primary underline block">Zverejňovanie zmlúv, objednávok a faktúr do 31.3.2022</a>
+              <a href="https://crz.trnava-vuc.sk/1047065-sk/zdrava-zupa-sro/" className="text-primary underline block">Zverejňovanie objednávok a faktúr</a>
+              <a href="https://crz.gov.sk/2171273-sk/centralny-register-zmluv/?art_zs2=&art_predmet=&art_ico=&art_suma_spolu_od=&art_suma_spolu_do=&art_datum_zverejnene_od=&art_datum_zverejnene_do=&art_rezort=0&art_zs1=zdrav%C3%A1+%C5%BEupa&nazov=&art_ico1=&ID=2171273&odoslat=Vyh%C4%BEada%C5%A5&frm_id_frm_filter_3=624d469ee7dca" className="text-primary underline block">Zverejňovanie zmlúv</a>
             </div>
           </section>
 
@@ -83,9 +82,9 @@ export default function Verejnost() {
                 Na zadávanie zákaziek, evidenciu týchto zákaziek, ako aj na zabezpečenie s tým súvisiacich činností využíva informačný systém verejnej správy ELEKTRONICKÁ PLATFORMA. Elektronická platforma – Informačný systém verejnej správy (isepvo.sk)
               </p>
               <div className="space-y-2">
-                <a href="#" className="text-primary block">Profil verejného obstarávateľa: Vyhľadávanie profilov - ÚVO (gov.sk)</a>
-                <a href="#" className="text-primary block">Elektronický kontraktačný systém (elektronické trhovisko): Detail objednávateľa - Elektronický kontraktačný systém (eks.sk)</a>
-                <a href="#" className="text-primary block">Plán verejného obstarávania na rok 2024</a>
+                <a href="https://www.uvo.gov.sk/vyhladavanie/vyhladavanie-profilov/detail/21317?cHash=0fa3541b1116ba14b7b645b1f056aa0e" className="text-primary underline   block">Profil verejného obstarávateľa: Vyhľadávanie profilov - ÚVO (gov.sk)</a>
+                <a href="https://portal.eks.sk/SpravaObjednavatelov/VerejnyProfilObjednavatela/Detail/9055" className="text-primary underline block">Elektronický kontraktačný systém (elektronické trhovisko): Detail objednávateľa - Elektronický kontraktačný systém (eks.sk)</a>
+                <a href="/planvo.pdf" className="text-primary underline block">Plán verejného obstarávania na rok 2024</a>
               </div>
             </div>
           </section>

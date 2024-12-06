@@ -40,7 +40,7 @@ export default function RootLayout({
                   <Image 
                     src="/zzlogo.png"
                     alt="Logo Zdravá župa"
-                    width={200}
+                    width={120}
                     height={60}
                   />
                 </Link>
