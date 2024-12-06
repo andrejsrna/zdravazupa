@@ -2,6 +2,7 @@ import Link from "next/link";
 import Benefits from "./components/Benefits";
 import ZP from "./components/ZP";
 import Image from "next/image";
+import Foto from "./components/Foto";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -189,6 +190,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <Foto />
 
         <Benefits />
         <ZP />

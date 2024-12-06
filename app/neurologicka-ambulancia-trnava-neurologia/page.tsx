@@ -1,8 +1,25 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Neurologická ambulancia | Zdravá župa Trnava',
+  description: 'Neurologická ambulancia v Trnave prijíma nových pacientov. MUDr. Šimášková Ivana poskytuje neurologickú starostlivosť v modernom zdravotníckom zariadení na Študentskej ulici.',
+  keywords: 'neurológia, neurologická ambulancia, Trnava, MUDr. Šimášková, Zdravá župa, neurologické vyšetrenie',
+  openGraph: {
+    title: 'Neurologická ambulancia | Zdravá župa Trnava',
+    description: 'Neurologická ambulancia v Trnave prijíma nových pacientov. MUDr. Šimášková Ivana poskytuje neurologickú starostlivosť v modernom zdravotníckom zariadení.',
+    url: 'https://zdravazupa.sk/neurologicka-ambulancia-trnava-neurologia',
+    siteName: 'Zdravá župa',
+    locale: 'sk_SK',
+    type: 'website',
+  }
+};
+
+
 export default function NeurologickaAmbulancia() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">
       <div className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <div>
           <h1 className="text-4xl font-bold mb-4 text-primary">Neurologická ambulancia</h1>
 
           <div className="bg-green-50 p-6 rounded-lg mb-8 border border-green-200 shadow-sm">

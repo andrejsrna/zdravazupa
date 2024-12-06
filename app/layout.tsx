@@ -5,6 +5,8 @@ import Image from "next/image";
 import "./globals.css";
 import MainMenu from './components/MainMenu'
 import Footer from './components/Footer'
+import Notification from '@/components/Notification'
+import { AuthProvider } from '@/components/AuthProvider'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,33 +34,36 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b">
-          <div className="container mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <Link href="/">
-                  <Image 
-                    src="/zzlogo.png"
-                    alt="Logo Zdravá župa"
-                    width={120}
-                    height={60}
-                  />
-                </Link>
-                <Link href="https://www.trnava-vuc.sk">
-                  <Image 
-                    src="/ttsklogo.png"
-                    alt="Logo TTSK"
-                    width={120}
-                    height={60}
-                  />
-                </Link>
+        <AuthProvider>
+          <Notification />
+          <header className="border-b">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <Link href="/">
+                    <Image 
+                      src="/zzlogo.png"
+                      alt="Logo Zdravá župa"
+                      width={120}
+                      height={60}
+                    />
+                  </Link>
+                  <Link href="https://www.trnava-vuc.sk">
+                    <Image 
+                      src="/ttsklogo.png"
+                      alt="Logo TTSK"
+                      width={120}
+                      height={60}
+                    />
+                  </Link>
+                </div>
+                <MainMenu />
               </div>
-              <MainMenu />
             </div>
-          </div>
-        </header>
-        {children}
-        <Footer />
+          </header>
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

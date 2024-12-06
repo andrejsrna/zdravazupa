@@ -19,7 +19,7 @@ export default function ADOS() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-gray-100">
       <div className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <div>
           <h1 className="text-4xl font-bold mb-4 text-primary">Agentúra domácej ošetrovateľskej starostlivosti Zdravá župa, s.r.o.</h1>
 
           <section className="mb-12">
