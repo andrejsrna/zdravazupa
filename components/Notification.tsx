@@ -12,7 +12,7 @@ interface Notification {
 
 export default function Notification() {
   const [notifications, setNotifications] = useState<Notification[]>([])
-  const [showNotifications, setShowNotifications] = useState(true)
+  const [showNotifications] = useState(true)
   const [dismissedNotifications, setDismissedNotifications] = useState<string[]>(() => {
     // Load dismissed notifications from localStorage on initial render
     if (typeof window !== 'undefined') {
