@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -101,7 +102,19 @@ export default function ADOS() {
           </section>
 
           <section className="bg-white rounded-lg shadow-md p-6 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">Dokumenty na stiahnutie</h2>
+            <div className="space-y-4">
+              <Button variant="outline" className="w-full justify-start text-left" asChild>
+                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.doc">Návrh na poskytovanie ošetrovateľskej starostlivosti (elektronicky)</a>
+              </Button>
+              <Button variant="outline" className="w-full justify-start text-left" asChild>
+                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.docx">Návrh na poskytovanie ošetrovateľskej starostlivosti (tlač)</a>
+              </Button>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM AGENTÚRY DOMÁCEJ OŠETROVATEĽSKEJ STAROSTLIVOSTI</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
@@ -115,28 +128,40 @@ export default function ADOS() {
                   <td className="p-2" colSpan={2}>Cenník výkonov mimo úhrady zdravotnej poisťovne</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-2">Doprava zdravotníckeho materiálu z lekárne k pacientovi</td>
-                  <td className="text-right p-2">5,- €</td>
+                  <td className="p-2">Doprava zdravotníckeho materiálu a liečiv z lekárne k pacientovi</td>
+                  <td className="text-right p-2">10,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Cielená odborná inštruktáž a oboznámenie pacienta s obsluhou pomôcok</td>
                   <td className="text-right p-2">10,- €</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-2">Požičanie pomôcok – chodítko, vozík</td>
+                  <td className="p-2">Požičanie pomôcok – chodítko, vozík / mesiac</td>
                   <td className="text-right p-2">25,- €</td>
                 </tr>
                 <tr className="border-b">
+                  <td className="p-2">Prenájom kyslíkového koncentrátora / mesiac</td>
+                  <td className="text-right p-2">30,- €</td>
+                </tr>
+                <tr className="border-b">
                   <td className="p-2">Vybavenie žiadosti u praktického lekára / špecialistu, sprievodky, skúmavky, žiadanky</td>
-                  <td className="text-right p-2">5,- €</td>
+                  <td className="text-right p-2">20,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Expresný príplatok za návštevu v byte pacienta v deň objednania</td>
-                  <td className="text-right p-2">5,- €</td>
+                  <td className="text-right p-2">10,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Príplatok za každú návštevu v čase určenom pacientom</td>
                   <td className="text-right p-2">5,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Príplatok za infúznu terapiu nad 1 hodinu v domácom prostredí</td>
+                  <td className="text-right p-2">10,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Ožarovanie rany lampou Bioptron: 1 impulz / 2 minúty</td>
+                  <td className="text-right p-2">2,- €</td>
                 </tr>
                 <tr className="border-b font-semibold">
                   <td className="p-2" colSpan={2}>Cenník výkonov mimo odporúčania lekára na vlastnú žiadosť</td>
@@ -223,7 +248,7 @@ export default function ADOS() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Čistenie tracheálnej kanyly</td>
-                  <td className="text-right p-2">10,- €</td>
+                  <td className="text-right p-2">15,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Aplikácia neinjekčnej liečby</td>
@@ -238,16 +263,12 @@ export default function ADOS() {
                   <td className="text-right p-2">25,- €</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-2">Aplikácia liečiva do svalu, podkožne</td>
+                  <td className="p-2">Aplikácia liečiva do svalu, podkožne na základe ordinácie lekára</td>
                   <td className="text-right p-2">5,- €</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-2">Aplikácia liečiva intravenózne</td>
+                  <td className="p-2">Aplikácia liečiva intravenózne na základe ordinácie lekára</td>
                   <td className="text-right p-2">15,- €</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-2">Sledovanie infúzie, za každú začatú hodinu</td>
-                  <td className="text-right p-2">5,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Podávanie liečiva infúznou pumpou (za hodinu)</td>
@@ -295,7 +316,7 @@ export default function ADOS() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Odber krvi venepunkciou</td>
-                  <td className="text-right p-2">5,- €</td>
+                  <td className="text-right p-2">15,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Odber kapilárnej krvi</td>
@@ -303,14 +324,14 @@ export default function ADOS() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Odbery: TT, TN, výter z rekta, odber spúta</td>
-                  <td className="text-right p-2">5,- €</td>
+                  <td className="text-right p-2">10,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Doprava biologického materiálu do laboratória</td>
                   <td className="text-right p-2">5,- €</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-2">Návšteva klienta v pracovnom čase (od 8:00 do 16:00)</td>
+                  <td className="p-2">Návšteva klienta v pracovnom čase (od 8:00 do 15:00)</td>
                   <td className="text-right p-2">10,- €</td>
                 </tr>
                 <tr className="border-b">
@@ -320,10 +341,6 @@ export default function ADOS() {
                 <tr className="border-b">
                   <td className="p-2">Konzultácia sestry o jednom klientovi s ošetrujúcim lekárom</td>
                   <td className="text-right p-2">10,- €</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-2">Poskytnutie predlekárskej pomoci pri náhlych stavoch ohrozujúcich život</td>
-                  <td className="text-right p-2">25,- €</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Verbálna intervencia pri psychosomatických ťažkostiach u pacienta</td>
@@ -343,7 +360,23 @@ export default function ADOS() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-2">Výber stehov z operačnej rany po konzultácii s operatérom</td>
+                  <td className="text-right p-2">15,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Doprava k pacientovi motorovým vozidlom (cena za km)</td>
+                  <td className="text-right p-2">1,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">EKG vyšetrenie v domácom prostredí bez popisu s vytlačeným záznamom (cena bez dopravy k pacientovi)</td>
+                  <td className="text-right p-2">20,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">INR vyšetrenie z kapilárnej krvi v domácom prostredí (výsledok na počkanie) (cena bez dopravy k pacientovi)</td>
                   <td className="text-right p-2">10,- €</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Vyšetrenie sestrou v domácom prostredí (spísanie anamnézy, meranie krvného tlaku, pulzu, telesnej teploty, hodnoty krvného cukru, stanovenie hladiny kyslíka, EKG vyšetrenie bez popisu s vytlačeným grafickým záznamom na odporúčanie lekára, vyšetrenie moču indikačným prúžkom na vylúčenie močovej infekcie, vytlačenie sesterskej správy, v cene je aj odber biologického materiálu po ordinácii lekára, cena bez dopravy k pacientovi)</td>
+                  <td className="text-right p-2">50,- €</td>
                 </tr>
               </tbody>
               </table>

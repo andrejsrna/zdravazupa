@@ -96,7 +96,7 @@ export default function KardiologickaAmbulancia() {
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM ŠPECIALIZOVANEJ KARDIOLOGICKEJ AMBULANCIE</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse bg-white rounded-lg shadow-md">
                 <thead>
@@ -107,36 +107,44 @@ export default function KardiologickaAmbulancia() {
                 </thead>
                 <tbody>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">Vstupné kardiologické vyšetrenie + EKG na žiadosť pacienta nad rámec úhrady ZP, samoplatca</td>
+                    <td className="p-4">Vstupné kardiologické vyšetrenie + EKG (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
                     <td className="text-right p-4 font-medium">50,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">Kontrolné kardiologické vyšetrenie + EKG na žiadosť pacienta nad rámec úhrady ZP, samoplatca</td>
+                    <td className="p-4">Kontrolné kardiologické vyšetrenie + EKG (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
                     <td className="text-right p-4 font-medium">25,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">EKG vyšetrenie s popisom na žiadosť pacienta nad rámec úhrady ZP, samoplatca</td>
-                    <td className="text-right p-4 font-medium">25,- €</td>
-                  </tr>
-                  <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">Echokardiografické vyšetrenie na žiadosť pacienta nad rámec úhrady ZP</td>
-                    <td className="text-right p-4 font-medium">75,- €</td>
-                  </tr>
-                  <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">24-hodinové Holter EKG meranie, vrátane administratívy na žiadosť pacienta nad rámec úhrady ZP, samoplatca</td>
-                    <td className="text-right p-4 font-medium">50,- €</td>
-                  </tr>
-                  <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">24-hodinové Holter TK meranie, vrátane administratívy na žiadosť pacienta nad rámec úhrady ZP, samoplatca</td>
+                    <td className="p-4">EKG vyšetrenie s popisom (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
                     <td className="text-right p-4 font-medium">30,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
-                    <td className="p-4">Posudok špecialistu o pracovnej spôsobilosti pred nástupom do zamestnania, na vlastnú žiadosť pacienta</td>
+                    <td className="p-4">Echokardiografické vyšetrenie (na žiadosť pacienta nad rámec úhrady ZP)</td>
+                    <td className="text-right p-4 font-medium">75,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">24-hodinové Holter EKG meranie, vrátane administratívy a vyhodnotenie (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
+                    <td className="text-right p-4 font-medium">50,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">24-hodinové Holter TK meranie vrátane administratívy a vyhodnotenie (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
+                    <td className="text-right p-4 font-medium">30,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">7 dňový Holter EKG meranie vrátane administratívy a vyhodnotenie</td>
+                    <td className="text-right p-4 font-medium">150,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">Posudok špecialistu o pracovnej spôsobilosti pred nástupom do zamestnania (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
                     <td className="text-right p-4 font-medium">20,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
                     <td className="p-4">Odber biologického materiálu na žiadosť pacienta nad rámec úhrady ZP, samoplatca (bez ceny vlastného vyšetrenia)</td>
                     <td className="text-right p-4 font-medium">15,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">INR vyšetrenie (výsledok na počkanie)</td>
+                    <td className="text-right p-4 font-medium">6,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
                     <td className="p-4">Vystavenie kópie lekárskej správy na žiadosť pacienta (originál je súčasťou zdravotného výkonu)</td>
@@ -147,8 +155,8 @@ export default function KardiologickaAmbulancia() {
                       <div className="font-medium mb-2">Komplexné kardiologické vyšetrenie (samoplatca, na vlastnú žiadosť pacienta)</div>
                       <div className="text-gray-600 space-y-1">
                         <p className="font-medium">Komplexné kardiologické vyšetrenie zahŕňa:</p>
-                        <p>• Základné vyšetrenie: anamnéza, fyzikálne vyšetrenie, základné antropometrické vyšetrenie, meranie pulzu a tlaku krvi</p>
-                        <p>• Laboratórne vyšetrenie: sedimentácia erytrocytov, krvný obraz, základné biochemické parametre, chemické vyšetrenie moču</p>
+                        <p>• Základné vyšetrenie: anamnéza, fyzikálne vyšetrenie</p>
+                        <p>• Základné antropometrické vyšetrenie, meranie pulzu a tlaku krvi</p>
                         <p>• Elektrokardiografia (EKG) – grafický záznam činnosti srdca</p>
                         <p>• Echokardiografické vyšetrenie – ultrazvukové vyšetrenie činnosti srdca</p>
                         <p>• Zhodnotenie vyšetrení, konzultácie</p>
@@ -158,18 +166,21 @@ export default function KardiologickaAmbulancia() {
                     <td className="text-right p-4 align-top font-medium">150,- €</td>
                   </tr>
                   <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">Vyhotovenie iných fotokópií - sadzba za 1 stranu formátu A4</td>
+                    <td className="text-right p-4 font-medium">1,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
+                    <td className="p-4">Vyhotovenie kópie žiadanky (pri strate)</td>
+                    <td className="text-right p-4 font-medium">3,- €</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50 transition-colors">
                     <td className="p-4">
-                      <div className="font-medium mb-2">Komplexné kardiologické vyšetrenie bez odberov (samoplatca, na vlastnú žiadosť pacienta)</div>
-                      <div className="text-gray-600 space-y-1">
-                        <p className="font-medium">Komplexné kardiologické vyšetrenie zahŕňa:</p>
-                        <p>• Základné vyšetrenie: anamnéza, fyzikálne vyšetrenie, základné antropometrické vyšetrenie, meranie pulzu a tlaku krvi</p>
-                        <p>• Elektrokardiografia (EKG) – grafický záznam činnosti srdca</p>
-                        <p>• Echokardiografické vyšetrenie – ultrazvukové vyšetrenie činnosti srdca</p>
-                        <p>• Zhodnotenie vyšetrení, konzultácie</p>
-                        <p>• Lekárska správa – pre klienta so zisteným nálezom, odporučenie režimových opatrení a prípadného liečebného postupu</p>
+                      <div className="font-medium mb-2">ABI index</div>
+                      <div className="text-gray-600">
+                        (dôležitý rizikový marker ischemickej choroby dolných končatín – upchávanie tepien, predpovedá pravdepodobnosť výskytu srdcového infarktu alebo cievnej mozgovej príhody, vhodný pre rizikové skupiny fajčiari, diabetici)
                       </div>
                     </td>
-                    <td className="text-right p-4 align-top font-medium">130,- €</td>
+                    <td className="text-right p-4 align-top font-medium">30,- €</td>
                   </tr>
                 </tbody>
               </table>

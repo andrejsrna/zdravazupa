@@ -126,7 +126,7 @@ export default function AmbulanciaPreDospelych() {
         <Benefits />
 
         <section className="mb-12 bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl font-semibold mb-6 text-primary">CENNÍK</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM AMBULANCIE VŠEOBECNÉHO LEKÁRA PRE DOSPELÝCH</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -149,15 +149,11 @@ export default function AmbulanciaPreDospelych() {
                   <td className="text-right p-3">25,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">Prehliadka a posudok pred nástupom na špec. Kurz</td>
+                  <td className="p-3">Prehliadka a posudok pred nástupom na špec. kurz</td>
                   <td className="text-right p-3">25,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Prehliadka a posudok o zdrav. spôsobilosti pre držanie a nosenie zbraní, zbrojného pasu, pilotný, potápačský preukaz, extrémne športy</td>
-                  <td className="text-right p-3">50,- €</td>
-                </tr>
-                <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">Vstupná prehliadka, mimoriadna prehliadka v súvislosti s výkonom povolania, pred športovou súťažou, cestou do cudziny</td>
                   <td className="text-right p-3">50,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
@@ -167,6 +163,10 @@ export default function AmbulanciaPreDospelych() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Posúdenie spôsobilosti na prácu na žiadosť zamestnávateľa alebo pacienta</td>
                   <td className="text-right p-3">25,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Vystavenie zdravotného preukazu pre pracovníkov vykonávajúcich epidemiologicky závažné činnosti</td>
+                  <td className="text-right p-3">15,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Lekárska správa na žiadosť pacienta, na žiadosť komerčnej poisťovne (podľa počtu strán)</td>
@@ -181,7 +181,15 @@ export default function AmbulanciaPreDospelych() {
                   <td className="text-right p-3">10,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">Potvrdenie o zdrav. spôsobilosti pre štúdium (SŠ, VŠ, SOU)</td>
+                  <td className="p-3">Predoperačné vyšetrenie bez zdravotnej indikácie (bez EKG a odberov biologického materiálu)</td>
+                  <td className="text-right p-3">30,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Potvrdenie o zdrav. spôsobilosti pre štúdium (SŠ, VŠ, SOU), brigády</td>
+                  <td className="text-right p-3">5,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Potvrdenie o zdrav. spôsobilosti pre kurzy a brigády</td>
                   <td className="text-right p-3">10,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
@@ -197,19 +205,45 @@ export default function AmbulanciaPreDospelych() {
                   <td className="text-right p-3">30,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">1. Rozšírená preventívna prehliadka k základnej preventívnej prehliadke hradenej zo ZP 1x za 24 mesiacov -- rozšírené odbery biol. mat.+ iFOB test + EKG, ktoré nie je hradené zo ZP do 40rokov</td>
+                  <td className="p-3">Vyšetrenie INR (výsledok na počkanie)</td>
+                  <td className="text-right p-3">6,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Tlakomerový holter (24 hodín)</td>
+                  <td className="text-right p-3">10,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Podanie 1 infúzie (spoluúčasť pacienta za likvidáciu biologického odpadu)</td>
+                  <td className="text-right p-3">2,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Vyhotovenie iných fotokópií - sadzba za 1 stranu formátu A4</td>
+                  <td className="text-right p-3">1,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Vyhotovenie kópie žiadanky (pri strate)</td>
+                  <td className="text-right p-3">3,- €</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 className="text-xl font-semibold mt-12 mb-6 text-primary">Preventívne prehliadky</h3>
+            <table className="w-full">
+              <tbody>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">1. Rozšírená preventívna prehliadka k základnej preventívnej prehliadke hradenej zo ZP 1x za 24 mesiacov<br/>- rozšírené odbery biol. mat., INR, + iFOB test + EKG, ktoré nie je hradené zo ZP do 40rokov</td>
                   <td className="text-right p-3">50,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">2. Nadštandardná preventívna prehliadka k základnej preventívnej prehliadke hradenej zo ZP 1x za 24 mesiacov -- rozšírené odbery biol. mat.+ iFOB test + EKG + ABI, ktoré nie je hradené zo ZP do 40rokov</td>
+                  <td className="p-3">2. Nadštandardná preventívna prehliadka k základnej preventívnej prehliadke hradenej zo ZP 1x za 24 mesiacov<br/>- rozšírené odbery biol. mat., INR + iFOB test + EKG + ABI, ktoré nie je hradené zo ZP do 40rokov</td>
                   <td className="text-right p-3">70,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">3. Mimoriadna (základná) preventívna prehliadka mimo preventívnej prehliadky hradenej zo ZP 1x za 24 mesiacov zo ZP -- základné odbery + vyšetrenie pacienta, EKG</td>
+                  <td className="p-3">3. Mimoriadna (základná) preventívna prehliadka mimo preventívnej prehliadky hradenej zo ZP 1x za 24 mesiacov zo ZP<br/>- základné odbery + vyšetrenie pacienta, EKG</td>
                   <td className="text-right p-3">65,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">4. Nadštandardná preventívna prehliadka mimo preventívnej prehliadky hradenej 1x za 24 mesiacov zo ZP -- rozšírené odbery biol. mat.+ iFOB test + EKG + ABI</td>
+                  <td className="p-3">4. Nadštandardná preventívna prehliadka mimo preventívnej prehliadky hradenej 1x za 24 mesiacov zo ZP<br/>- rozšírené odbery biol. mat., INR, + iFOB test + EKG + ABI</td>
                   <td className="text-right p-3">100,- €</td>
                 </tr>
               </tbody>
@@ -228,7 +262,12 @@ export default function AmbulanciaPreDospelych() {
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">EKG na žiadosť pacienta mimo indikácie</td>
                   <td className="text-right p-3">15,- €</td>
-                  <td className="text-right p-3">20,- €</td>
+                  <td className="text-right p-3">30,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">EKG popis na žiadosť pacienta mimo indikácie</td>
+                  <td className="text-right p-3">5,- €</td>
+                  <td className="text-right p-3">10,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">ABI index na žiadosť pacienta mimo indikácie<br/>(dôležitý rizikový marker ischemickej choroby dolných končatín – upchávanie tepien, predpovedá pravdepodobnosť výskytu srdcového infarktu alebo cievnej mozgovej príhody, vhodný pre rizikové skupiny fajčiari, diabetici)<br/>(na vlastnú žiadosť pacienta – výsledok na počkanie)</td>
@@ -237,11 +276,16 @@ export default function AmbulanciaPreDospelych() {
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Spirometria na žiadosť pacienta mimo indikácie<br/>(na vlastnú žiadosť pacienta, výsledok do 2 pracovných dní)</td>
-                  <td className="text-right p-3">30,- </td>
+                  <td className="text-right p-3">30,- €</td>
                   <td className="text-right p-3">40,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Vyšetrenie CRP (na vlastnú žiadosť pacienta, výsledok na počkanie)</td>
+                  <td className="text-right p-3">5,- €</td>
+                  <td className="text-right p-3">10,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Vyšetrenie INR (na vlastnú žiadosť pacienta, výsledok na počkanie)</td>
                   <td className="text-right p-3">5,- €</td>
                   <td className="text-right p-3">10,- €</td>
                 </tr>
@@ -251,19 +295,19 @@ export default function AmbulanciaPreDospelych() {
                   <td className="text-right p-3">5,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">Podanie 1 infúzie</td>
+                  <td className="p-3">Podanie 1 infúzie (na vlastnú žiadosť pacienta, alebo indikáciu iného lekára)</td>
                   <td className="text-right p-3">5,- €</td>
                   <td className="text-right p-3">10,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="p-3">Podanie 5 infúzii</td>
+                  <td className="p-3">Podanie 5 infúzii (na vlastnú žiadosť pacienta, alebo indikáciu iného lekára)</td>
                   <td className="text-right p-3">20,- €</td>
                   <td className="text-right p-3">45,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Prenájom kyslíkového koncentrátora</td>
-                  <td className="text-right p-3">70,- € / mesiac<br/>(finančná zábezpeka 200,- €)</td>
-                  <td className="text-right p-3">80,- € / mesiac<br/>(finančná zábezpeka 200,- €)</td>
+                  <td className="text-right p-3">30,- € / mesiac</td>
+                  <td className="text-right p-3">40,- € / mesiac</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Tlakomerový holter (24 hodín) - (na vlastnú žiadosť pacienta)</td>
@@ -284,6 +328,46 @@ export default function AmbulanciaPreDospelych() {
                   <td className="p-3">Covid – určenie hladiny protilátok IgM, IgG<br/>(na vlastnú žiadosť pacienta, výsledok na počkanie)</td>
                   <td className="text-right p-3">10,- €</td>
                   <td className="text-right p-3">20,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Covid Ag test (ZP 24 - kapitovaný)</td>
+                  <td className="text-right p-3">5,- €</td>
+                  <td className="text-right p-3">-</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Covid Ag test (ZP 24 - nekapitovaný)</td>
+                  <td className="text-right p-3">-</td>
+                  <td className="text-right p-3">15,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Infúzia vitamínom C 7,5g<br/>(Infúzia s vitamínom C je skvelý spôsob, ako posilniť imunitný systém a doplniť energiu. Vitamín C je známy svojimi antioxidačnými vlastnosťami, čo znamená, že pomáha bojovať proti voľným radikálom a chráni vaše bunky pred poškodením. Zároveň je esenciálnou zložkou pri tvorbe kolagénu a karnitínu, preto je nevyhnutný pre zdravú a pokožku a pleť. Okrem toho, vďaka jeho antioxidačným vlastnostiam, má protirakovinové účinky, preto sa používa aj ako podporná liečba pri onkologických ochoreniach)<br/>Zloženie: 500ml fyziologického roztoku, 7,5g vitamín C<br/>Trvanie: 45-60minút</td>
+                  <td className="text-right p-3">25,- €</td>
+                  <td className="text-right p-3">30,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Infúzna terapia vitamínom C 7,5g (10x)<br/>10 x infúzna terapia fyziologickým roztokom a vitamínom C 7,5g v rozpise na mesiac: prvé dva týždne infúzia 3 x do týždňa, dva týždne 2 x do týždňa.<br/>(Infúzia s vitamínom C je skvelý spôsob, ako posilniť imunitný systém a doplniť energiu. Vitamín C je známy svojimi antioxidačnými vlastnosťami, čo znamená, že pomáha bojovať proti voľným radikálom a chráni vaše bunky pred poškodením. Zároveň je esenciálnou zložkou pri tvorbe kolagénu a karnitínu, preto je nevyhnutný pre zdravú a pokožku a pleť. Okrem toho, vďaka jeho antioxidačným vlastnostiam, má protirakovinové účinky, preto sa používa aj ako podporná liečba pri onkologických ochoreniach)<br/>Zloženie: 500ml fyziologického roztoku, 7,5g vitamín C<br/>Trvanie: 45-60minút</td>
+                  <td className="text-right p-3">240,- €</td>
+                  <td className="text-right p-3">280,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Infúzia na regeneráciu pečene<br/>Infúzia je vhodná na podporu a regeneráciu nervového systému, aj ako podpora pri neurologických ochoreniach. Zostavili sme ju tak, aby poskytovala potrebné vitamíny a minerály pre zdravie a správnu funkciu nervov. Obsahuje vysoké dávky vitamínov skupiny B, najmä B12 a B6, ktoré sú kriticky dôležité pre nervovú regeneráciu neurotransmisiu. Vďaka tomu pomáha pri obnove nervových zakončení, pri ochoreniach, ktoré súvisia s vyššou spotrebou vitamínov B-komplexu (napr. ochorenia pečene, alkoholizmus).<br/>Zloženie: 500ml fyziologického roztoku, vitamín B1, B6, B12<br/>Trvanie: 45-60minút</td>
+                  <td className="text-right p-3">30,- €</td>
+                  <td className="text-right p-3">35,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Infúzia pri bolestiach svalov, kĺbov, chrbtice<br/>Magnézium - jeho nedostatok môže narúšať všetky orgány a telové systémy. Jeho nedostatok má za následok napríklad zvýšené kazenie zubov, svalové kŕče a slabosť, poruchy srdcovej činnosti, psychické poruchy, bolesti hlavy, migrény, depresia a iné... Milgamma N - je liek, ktorý používame pri príznakoch nadmerného preťaženia, v rekonvalescencii (napr. zotavenie sa po chorobe), pri bolestiach svalov, zápale nervov, reumatických ťažkostí a podobne.<br/>Infúzia je vhodná ak: ste pod tlakom a stresom, cítite sa psychicky a fyzicky vyčerpane, máte bolesti svalov, kĺbov, kŕče, zápal nervov, pociťujete bolesti hlavy, podráždenosť, zlosť, nepokoj, úzkosť, máte nervové ochorenia, poruchy spánku, migrény, stres, depresiu alebo žalúdočné problémy, máte reumatické bolesti, vyskočenú platničku, pásový opar, máte pocit tŕpnutia a mravčenia (oblasť úst, tváre, končeky prstov a nôh), mykanie malých svalov (okolo očí, úst), kardiologické príznaky (pocit búšenia srdca, zvieranie hrude) a závraty.<br/>Zloženie: 500ml fyziologického roztoku, milgamma NA, 10% MgSO4<br/>Trvanie: 45-60minút</td>
+                  <td className="text-right p-3">30,- €</td>
+                  <td className="text-right p-3">35,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Infúzia na detox organizmu a podporu imunity<br/>Skvelá voľba pre tých, ktorí hľadajú účinný spôsob, ako podporiť detoxikáciu tela a zároveň doplniť dôležité živiny pre celkové zdravie a pohodu.<br/>Infúzia poskytuje komplex vitamínov A, D, E, K. V tejto infúzií je špeciálne zvýšená dávka selénu, čo je obzvlášť dôležité pri podpore imunitného systému a eliminácií voľných radikálov, takže táto kombinácia zaručuje maximálnu detoxikáciu a regeneráciu organizmu. Podporuje zrak, srdce, svaly, imunitný systém, zdravie kože a kostí. Táto infúzia obsahuje samostatný selén (selenase), čo zvyšuje cenu infúzie. Selén je nevyhnutný minerál, ktorý zohráva významnú úlohu pri vykonávaní viacerých dôležitých procesov v tele. Telo si ho však nedokáže vyrobiť samo, preto je jeho suplementácia obzvlášť dôležitá pre osoby, ktoré chcú dosiahnuť optimálne zdravie.<br/>Zloženie: 500ml fyziologického roztoku, vitamín D, vitamín K, vitamín A, vitamín E, Selén<br/>Trvanie: 45-60minút</td>
+                  <td className="text-right p-3">200,- €</td>
+                  <td className="text-right p-3">250,- €</td>
+                </tr>
+                <tr className="border-b hover:bg-gray-50">
+                  <td className="p-3">Oxygenoterapia<br/>Oxygenoterapia priaznivo pôsobí na psychiku, posilňuje imunitný systém pri infekciách a celkovom chronickom oslabení organizmu. Táto terapia je vhodná po náročnej fyzickej či psychickej záťaži.<br/>Trvanie: 60minút</td>
+                  <td className="text-right p-3">25,- €</td>
+                  <td className="text-right p-3">30,- €</td>
                 </tr>
               </tbody>
             </table>

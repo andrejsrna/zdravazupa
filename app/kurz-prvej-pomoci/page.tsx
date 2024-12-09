@@ -33,7 +33,7 @@ export default function KurzPrvejPomoci() {
                 <a href="/skusobny_poriadok.pdf">Skúšobný poriadok</a>
               </Button>
               <Button variant="outline" className="w-full justify-start text-left" asChild>
-                <a href="#">Prihláška na kurz prvej pomoci</a>
+                <a href="/prihlaska-pp.docx">Prihláška na kurz prvej pomoci</a>
               </Button>
             </div>
           </section>

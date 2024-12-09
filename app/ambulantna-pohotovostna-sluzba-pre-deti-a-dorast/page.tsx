@@ -91,6 +91,86 @@ export default function AmbulantnaPohotovostPage() {
             </div>
           </section>
           <ZP />
+          <section className="mb-12">
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-2xl font-semibold mb-4 text-primary">AMBULANTNÁ POHOTOVOSTNÁ SLUŽBA PRE DETI A DORAST - CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-primary">
+                      <th className="text-left p-3 bg-gray-50">Názov výkonu</th>
+                      <th className="text-right p-3 bg-gray-50">Cena</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">Poplatok v APS v zmysle zákona č.577/2004 Z.z.</td>
+                      <td className="text-right p-3">2,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">Vyšetrenie CRP (výsledok na počkanie)</td>
+                      <td className="text-right p-3">8,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">Vyšetrenie moču (výsledok na počkanie, hodnoty: kyselina askorbová, bilirubín, krv, glukóza, ketóny, leukocyty, nitrity, pH, bielkovina, špecifická hmotnosť, urobilinogen)</td>
+                      <td className="text-right p-3">5,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">Vyšetrenie CRP bez indikácie lekára na vlastnú žiadosť rodiča (výsledok na počkanie)</td>
+                      <td className="text-right p-3">15,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">Vyšetrenie moču bez indikácie lekára na vlastnú žiadosť rodiča (výsledok na počkanie, hodnoty: kyselina askorbová, bilirubín, krv, glukóza, ketóny, leukocyty, nitrity, pH, bielkovina, špecifická hmotnosť, urobilinogen)</td>
+                      <td className="text-right p-3">8,- €</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h3 className="text-xl font-semibold my-6">Vyšetrenie pacienta cudzej štátnej príslušnosti bez doloženého preukazu EÚ, alebo pacienta cudzej štátnej príslušnosti bez akéhokoľvek dokladu o poistení:</h3>
+                
+                <table className="w-full border-collapse">
+                  <tbody>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">do 5 rokov života</td>
+                      <td className="text-right p-3">30,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">nad 5 rokov života</td>
+                      <td className="text-right p-3">25,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">krátka správa lekára APS pre ošetrujúceho lekára</td>
+                      <td className="text-right p-3">5,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">vyšetrenie CRP (výsledok na počkanie)</td>
+                      <td className="text-right p-3">15,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">odber krvi</td>
+                      <td className="text-right p-3">10,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">odber moču</td>
+                      <td className="text-right p-3">6,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">podanie injekcie do svalu, podanie čípku, nebulizácia alebo inhalačné podanie liečiva</td>
+                      <td className="text-right p-3">7,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">podanie injekcie do žily</td>
+                      <td className="text-right p-3">10,- €</td>
+                    </tr>
+                    <tr className="border-b hover:bg-gray-50">
+                      <td className="p-3">extrakcia kliešťa, ošetrenie malej rany</td>
+                      <td className="text-right p-3">7,- €</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
