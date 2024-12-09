@@ -62,7 +62,7 @@ export default function Verejnost() {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Na stiahnutie</h2>
             <div className="space-y-2">
-              <a href="#" className="text-primary underline block">CV konateľka Zdravej župy</a>
+              <a href="/cv-konatelka.pdf" className="text-primary underline block">CV konateľka Zdravej župy</a>
               <a href="/infoocinnost.pdf" className="text-primary underline block">Informácia o činnosti Zdravá župa s.r.o. 09-2021 až 02-2022</a>
               <a href="/infoocinnostolder.pdf" className="text-primary underline block">Informácia o činnosti Zdravá župa s.r.o. 03-2022 až 12-2022</a>
               <a href="/zodpovedny-obstaravatel" className="text-primary underline block">Ocenenie Zodpovedný verejný obstarávateľ za rok 2022</a>

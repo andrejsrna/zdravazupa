@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -65,14 +66,21 @@ export default function MobilnyHospic() {
             </p>
           </div>
 
-          <div className="mb-8">
-            <a href="#" className="text-primary hover:underline flex items-center">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-              Návrh na poskytovanie mobilnej hospicovej starostlivosti (tlač, 75 kB)
-            </a>
-          </div>
+          <section className="bg-white rounded-lg shadow-md p-6 mb-12">
+            <h2 className="text-2xl font-semibold mb-4 text-primary">Dokumenty na stiahnutie</h2>
+            <div className="space-y-4">
+              <Button variant="outline" className="w-full justify-start text-left whitespace-normal py-4" asChild>
+                <a href="/Navrh_na_poskytovanie_hospic_tlac.docx">
+                  Návrh na poskytovanie mobilnej hospicovej starostlivosti (tlač)
+                </a>
+              </Button>
+              <Button variant="outline" className="w-full justify-start text-left whitespace-normal py-4" asChild>
+                <a href="/Navrh_na_poskytovanie_hospic.docx">
+                  Návrh na poskytovanie mobilnej hospicovej starostlivosti (elektronicky)
+                </a>
+              </Button>
+            </div>
+          </section>
 
           <section className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-white rounded-lg shadow-md p-6">
