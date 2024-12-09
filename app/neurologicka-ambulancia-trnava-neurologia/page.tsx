@@ -98,7 +98,7 @@ export default function NeurologickaAmbulancia() {
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-              <h2 className="text-2xl font-semibold mb-4 text-primary">Cenník</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM NEUROLOGICKEJ AMBULANCIE</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
@@ -109,11 +109,17 @@ export default function NeurologickaAmbulancia() {
                   </thead>
                   <tbody>
                     {[
-                      { service: 'Komplexné vstupné neurologické vyšetrenie\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '50,- €' },
-                      { service: 'Kontrolné neurologické vyšetrenie\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '25,- €' },
-                      { service: 'Podanie obstreku\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '15,- €' },
-                      { service: 'Podanie 1 infúzie\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '10,- €' },
-                      { service: 'Podanie 5 infúzii\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '45,- €' },
+                      { service: 'Komplexné vstupné neurologické vyšetrenie\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca, vyšetrenie bez doporučenia lekára)', price: '50,- €' },
+                      { service: 'Kontrolné neurologické vyšetrenie\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca, vyšetrenie bez doporučenia lekára)', price: '25,- €' },
+                      { service: 'Podanie obstreku\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '25,- €' },
+                      { service: 'Podanie 1 infúzie\n(na žiadosť pacienta nad rámec úhrady ZP, samoplatca, alebo indikácia iného lekára)', price: '12,- €' },
+                      { service: 'Podanie 5 infúzii\n(na žiadosť pacienta nad rámec úhrady ZP,samoplatca)', price: '50,- €' },
+                      { service: 'Podanie obstreku\n(spoluúčasť pacienta za likvidáciu biologického odpadu)', price: '2,- €' },
+                      { service: 'Podanie 1 infúzie\n(spoluúčasť pacienta za likvidáciu biologického odpadu)', price: '2,- €' },
+                      { service: 'Posudok špecialistu o pracovnej spôsobilosti pred nástupom do zamestnania, na vlastnú žiadosť pacienta', price: '20,- €' },
+                      { service: 'Vystavenie kópie lekárskej správy na žiadosť pacienta\n(originál je súčasťou zdravotného výkonu)', price: '1,- €' },
+                      { service: 'Vyhotovenie iných fotokópií - sadzba za 1 stranu formátu A 4', price: '1,- €' },
+                      { service: 'Vyhotovenie kópie žiadanky (pri strate)', price: '3,- €' },
                     ].map((item, i) => (
                       <tr key={i} className="border-b hover:bg-gray-50 transition-colors">
                         <td className="p-3 whitespace-pre-line">{item.service}</td>

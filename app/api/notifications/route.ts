@@ -4,24 +4,58 @@ import prisma from '@/lib/prisma'
 import { authOptions } from '@/app/api/auth/options'
 
 export async function GET() {
-  const session = await getServerSession(authOptions)
-  
-  if (!session?.user?.email) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
   try {
+    const session = await getServerSession(authOptions)
+    
+    if (!session?.user?.email) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
+
+    console.log('Attempting to fetch notifications...')
+    
     const notifications = await prisma.notification.findMany({
+      where: {
+        active: true,
+        OR: [
+          { expiresAt: null },
+          { expiresAt: { gt: new Date() } }
+        ]
+      },
       orderBy: {
         createdAt: 'desc'
+      },
+      select: {
+        id: true,
+        message: true,
+        type: true,
+        active: true,
+        expiresAt: true,
+        createdAt: true
       }
     })
     
-    return NextResponse.json(notifications)
+    console.log('Fetched notifications:', notifications)
+
+    const response = { 
+      notifications: Array.isArray(notifications) ? notifications : [],
+      timestamp: new Date().toISOString()
+    }
+
+    console.log('Sending response:', response)
+    return NextResponse.json(response)
+
   } catch (error) {
-    console.error('Error fetching notifications:', error)
+    console.error('Detailed error:', {
+      name: (error as Error)?.name,
+      message: (error as Error)?.message,
+      stack: (error as Error)?.stack
+    })
+
     return NextResponse.json(
-      { error: 'Failed to fetch notifications' },
+      { 
+        error: 'Failed to fetch notifications',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      },
       { status: 500 }
     )
   }

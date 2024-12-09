@@ -36,7 +36,7 @@ export default function NotificationsAdminPage() {
         setNotifications(data)
         setLoading(false)
       } catch (error) {
-        console.error('Error fetching notifications:', error)
+        console.error('Chyba pri načítaní notifikácií:', error)
         setLoading(false)
       }
     }
@@ -69,7 +69,7 @@ export default function NotificationsAdminPage() {
         setExpiresAt('')
       }
     } catch (error) {
-      console.error('Error creating notification:', error)
+      console.error('Chyba pri vytváraní notifikácie:', error)
     }
   }
 
@@ -87,12 +87,12 @@ export default function NotificationsAdminPage() {
         setNotifications(notifications.filter(n => n.id !== id))
       }
     } catch (error) {
-      console.error('Error deleting notification:', error)
+      console.error('Chyba pri mazaní notifikácie:', error)
     }
   }
 
   if (status === 'loading' || loading) {
-    return <div>Loading...</div>
+    return <div>Načítavam...</div>
   }
 
   if (!session) {
@@ -101,11 +101,11 @@ export default function NotificationsAdminPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4">Manage Notifications</h1>
+      <h1 className="text-2xl font-bold mb-4">Správa notifikácií</h1>
       
       <form onSubmit={handleSubmit} className="mb-8 space-y-4">
         <div>
-          <label className="block mb-2">Message:</label>
+          <label className="block mb-2">Správa:</label>
           <input
             type="text"
             value={message}
@@ -116,20 +116,20 @@ export default function NotificationsAdminPage() {
         </div>
         
         <div>
-          <label className="block mb-2">Type:</label>
+          <label className="block mb-2">Typ:</label>
           <select
             value={type}
             onChange={(e) => setType(e.target.value)}
             className="w-full p-2 border rounded"
           >
-            <option value="info">Info</option>
-            <option value="warning">Warning</option>
-            <option value="error">Error</option>
+            <option value="info">Informácia</option>
+            <option value="warning">Upozornenie</option>
+            <option value="error">Chyba</option>
           </select>
         </div>
 
         <div>
-          <label className="block mb-2">Expires At (optional):</label>
+          <label className="block mb-2">Platnosť do (voliteľné):</label>
           <input
             type="datetime-local"
             value={expiresAt}
@@ -142,12 +142,12 @@ export default function NotificationsAdminPage() {
           type="submit"
           className="bg-primary text-white px-4 py-2 rounded hover:bg-primary/90"
         >
-          Create Notification
+          Vytvoriť notifikáciu
         </button>
       </form>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Current Notifications</h2>
+        <h2 className="text-xl font-semibold">Aktuálne notifikácie</h2>
         {notifications.map((notification) => (
           <div
             key={notification.id}
@@ -161,11 +161,11 @@ export default function NotificationsAdminPage() {
               <div>
                 <p className="font-medium">{notification.message}</p>
                 <p className="text-sm text-gray-600">
-                  Created: {new Date(notification.createdAt).toLocaleString()}
+                  Vytvorené: {new Date(notification.createdAt).toLocaleString()}
                 </p>
                 {notification.expiresAt && (
                   <p className="text-sm text-gray-600">
-                    Expires: {new Date(notification.expiresAt).toLocaleString()}
+                    Platné do: {new Date(notification.expiresAt).toLocaleString()}
                   </p>
                 )}
               </div>
@@ -173,7 +173,7 @@ export default function NotificationsAdminPage() {
                 onClick={() => handleDelete(notification.id)}
                 className="text-red-600 hover:text-red-800"
               >
-                Delete
+                Vymazať
               </button>
             </div>
           </div>

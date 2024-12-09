@@ -1,26 +1,28 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Metadata } from "next";
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "Projekty | Zdravá župa",
-  description: "Prehľad projektov realizovaných v rámci zdravotníckeho zariadenia Zdravá župa v Trnave, vrátane Psycho-sociálneho centra, ADOS a Mobilného hospicu.",
-  openGraph: {
-    title: "Projekty | Zdravá župa",
-    description: "Prehľad projektov realizovaných v rámci zdravotníckeho zariadenia Zdravá župa v Trnave, vrátane Psycho-sociálneho centra, ADOS a Mobilného hospicu.",
-    images: [
-      {
-        url: "/images/og-projekty.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Projekty Zdravej župy",
-      },
-    ],
-  },
-};
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 export default function Projekty() {
+  const [openLightbox, setOpenLightbox] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const images = [
+    { src: "/psc.jpeg", alt: "Psycho-sociálne centrum" },
+    { src: "/ados.jpeg", alt: "ADOS Zdravá župa Trnava" },
+    { src: "/moho.jpeg", alt: "Mobilný hospic Zdravá župa Trnava" },
+    { src: "/posil.png", alt: "Národný projekt Ministerstva zdravotníctva SR" }
+  ];
+
+  const openImageLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setOpenLightbox(true);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -42,8 +44,8 @@ export default function Projekty() {
                 <Link href="https://www.health.gov.sk/Clanok?plan-obnovy" className="block text-sm text-muted-foreground hover:text-primary transition-colors">Health.gov.sk - Plán obnovy a odolnosti</Link>
               </div>
             </div>
-            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center">
-              <Image src="/psc.jpeg" alt="Psycho-sociálne centrum" width={600} height={400} className="object-cover w-full h-full rounded-lg" />
+            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center cursor-pointer" onClick={() => openImageLightbox(0)}>
+              <Image src="/psc.jpeg" alt="Psycho-sociálne centrum" width={600} height={400} className="object-cover rounded-lg" />
             </div>
           </section>
 
@@ -62,7 +64,7 @@ export default function Projekty() {
                 <Link href="https://www.health.gov.sk/Clanok?plan-obnovy" className="block text-sm text-muted-foreground hover:text-primary transition-colors">Health.gov.sk - Plán obnovy a odolnosti</Link>
               </div>
             </div>
-            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center">
+            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center cursor-pointer" onClick={() => openImageLightbox(1)}>
               <Image src="/ados.jpeg" alt="ADOS Zdravá župa Trnava" width={600} height={300} className="object-cover rounded-lg" />
             </div>
           </section>
@@ -82,7 +84,7 @@ export default function Projekty() {
                 <Link href="https://www.health.gov.sk/Clanok?plan-obnovy" className="block text-sm text-muted-foreground hover:text-primary transition-colors">Health.gov.sk - Plán obnovy a odolnosti</Link>
               </div>
             </div>
-            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center">
+            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center cursor-pointer" onClick={() => openImageLightbox(2)}>
               <Image src="/moho.jpeg" alt="Mobilný hospic Zdravá župa Trnava" width={600} height={300} className="object-cover rounded-lg" />
             </div>
           </section>
@@ -99,12 +101,19 @@ export default function Projekty() {
                 </Link>
               </Button>
             </div>
-            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center">
+            <div className="bg-muted rounded-lg h-[300px] flex items-center justify-center cursor-pointer" onClick={() => openImageLightbox(3)}>
               <Image src="/posil.png" alt="Národný projekt Ministerstva zdravotníctva SR" width={600} height={300} className="object-cover rounded-lg" />
             </div>
           </section>
         </div>
       </div>
+
+      <Lightbox
+        open={openLightbox}
+        close={() => setOpenLightbox(false)}
+        index={lightboxIndex}
+        slides={images}
+      />
     </div>
   );
 }

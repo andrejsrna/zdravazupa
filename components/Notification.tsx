@@ -10,10 +10,16 @@ export default function Notification() {
 
   useEffect(() => {
     const fetchNotification = async () => {
-      const res = await fetch('/api/notifications')
-      const data = await res.json()
-      if (data.length > 0) {
-        setNotification(data[0])
+      try {
+        const res = await fetch('/api/notifications')
+        const data = await res.json()
+        
+        // Check if we have notifications and they're not empty
+        if (data.notifications && data.notifications.length > 0) {
+          setNotification(data.notifications[0])
+        }
+      } catch (error) {
+        console.error('Error fetching notifications:', error)
       }
     }
 
