@@ -20,20 +20,20 @@ export default function LoginPage() {
         callbackUrl: '/admin/notifications'
       })
 
-      console.log('Sign in result:', result)
+      console.log('Výsledok prihlásenia:', result)
 
       if (result?.error) {
-        setError('Invalid credentials')
-        console.log('Auth error:', result.error)
+        setError('Nesprávne prihlasovacie údaje')
+        console.log('Chyba autentifikácie:', result.error)
       } else if (result?.ok) {
-        console.log('Auth successful, redirecting...')
+        console.log('Prihlásenie úspešné, presmerovanie...')
         router.push('/admin/notifications')
       } else {
-        console.log('Unexpected result:', result)
+        console.log('Neočakávaný výsledok:', result)
       }
     } catch (error) {
-      console.error('Sign in error:', error)
-      setError('An error occurred during sign in')
+      console.error('Chyba pri prihlásení:', error)
+      setError('Počas prihlasovania sa vyskytla chyba')
     }
   }
 
@@ -42,7 +42,7 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow">
         <div>
           <h2 className="text-center text-3xl font-bold text-gray-900">
-            Admin Login
+            Prihlásenie do administrácie
           </h2>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit} autoComplete="off">
@@ -57,7 +57,7 @@ export default function LoginPage() {
                 required
                 autoComplete="off"
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
-                placeholder="Username"
+                placeholder="Používateľské meno"
               />
             </div>
             <div>
@@ -67,7 +67,7 @@ export default function LoginPage() {
                 required
                 autoComplete="new-password"
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
-                placeholder="Password"
+                placeholder="Heslo"
               />
             </div>
           </div>
@@ -77,11 +77,11 @@ export default function LoginPage() {
               type="submit"
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
-              Sign in
+              Prihlásiť sa
             </button>
           </div>
         </form>
       </div>
     </div>
   )
-} 
+}
