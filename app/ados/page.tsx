@@ -104,11 +104,15 @@ export default function ADOS() {
           <section className="bg-white rounded-lg shadow-md p-6 mb-12">
             <h2 className="text-2xl font-semibold mb-4 text-primary">Dokumenty na stiahnutie</h2>
             <div className="space-y-4">
-              <Button variant="outline" className="w-full justify-start text-left" asChild>
-                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.doc">Návrh na poskytovanie ošetrovateľskej starostlivosti (elektronicky)</a>
+              <Button variant="outline" className="w-full justify-start text-left whitespace-normal py-4" asChild>
+                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.doc">
+                  Návrh na poskytovanie ošetrovateľskej starostlivosti (elektronicky) 
+                </a>
               </Button>
-              <Button variant="outline" className="w-full justify-start text-left" asChild>
-                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.docx">Návrh na poskytovanie ošetrovateľskej starostlivosti (tlač)</a>
+              <Button variant="outline" className="w-full justify-start text-left whitespace-normal py-4" asChild>
+                <a href="/navrh-na-poskytovanie-osetrovatelskej-starostlivosti.docx">
+                  Návrh na poskytovanie ošetrovateľskej starostlivosti (tlač)
+                </a>
               </Button>
             </div>
           </section>
