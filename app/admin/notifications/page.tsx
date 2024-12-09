@@ -148,36 +148,40 @@ export default function NotificationsAdminPage() {
 
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Aktuálne notifikácie</h2>
-        {notifications.map((notification) => (
-          <div
-            key={notification.id}
-            className={`p-4 rounded-lg ${
-              notification.type === 'error' ? 'bg-red-100' :
-              notification.type === 'warning' ? 'bg-yellow-100' :
-              'bg-blue-100'
-            }`}
-          >
-            <div className="flex justify-between items-start">
-              <div>
-                <p className="font-medium">{notification.message}</p>
-                <p className="text-sm text-gray-600">
-                  Vytvorené: {new Date(notification.createdAt).toLocaleString()}
-                </p>
-                {notification.expiresAt && (
+        {Array.isArray(notifications) && notifications.length > 0 ? (
+          notifications.map((notification) => (
+            <div
+              key={notification.id}
+              className={`p-4 rounded-lg ${
+                notification.type === 'error' ? 'bg-red-100' :
+                notification.type === 'warning' ? 'bg-yellow-100' :
+                'bg-blue-100'
+              }`}
+            >
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="font-medium">{notification.message}</p>
                   <p className="text-sm text-gray-600">
-                    Platné do: {new Date(notification.expiresAt).toLocaleString()}
+                    Vytvorené: {new Date(notification.createdAt).toLocaleString()}
                   </p>
-                )}
+                  {notification.expiresAt && (
+                    <p className="text-sm text-gray-600">
+                      Platné do: {new Date(notification.expiresAt).toLocaleString()}
+                    </p>
+                  )}
+                </div>
+                <button
+                  onClick={() => handleDelete(notification.id)}
+                  className="text-red-600 hover:text-red-800"
+                >
+                  Vymazať
+                </button>
               </div>
-              <button
-                onClick={() => handleDelete(notification.id)}
-                className="text-red-600 hover:text-red-800"
-              >
-                Vymazať
-              </button>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-gray-500">Žiadne notifikácie</p>
+        )}
       </div>
     </div>
   )
