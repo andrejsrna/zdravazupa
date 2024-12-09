@@ -64,9 +64,12 @@ export default function NotificationsAdminPage() {
 
       if (res.ok) {
         const newNotification = await res.json()
-        setNotifications([newNotification, ...notifications])
+        const currentNotifications = Array.isArray(notifications) ? notifications : []
+        setNotifications([newNotification, ...currentNotifications])
         setMessage('')
         setExpiresAt('')
+      } else {
+        console.error('Server responded with error:', await res.text())
       }
     } catch (error) {
       console.error('Chyba pri vytváraní notifikácie:', error)
