@@ -32,7 +32,7 @@ export default function AmbulantnaPohotovostPage() {
                 <p className="flex items-center"><span className="font-semibold min-w-[140px]">Miesto poskytovania:</span> Starohájska 1 v Trnave</p>
                 <p className="mt-4 text-gray-700">Poskytovaná zdravotná starostlivosť je určená pre pacientov zo spádových oblastí Trnava a Hlohovec.</p>
                 <p className="bg-yellow-50 p-3 rounded-md border border-yellow-200 mt-4">
-                  <span className="text-yellow-800">⚠️ Upozornenie:</span> Počas sviatkov je zdravotná starostlivosť poskytovaná v čase 07:00 – 22:00 hod.
+                  <span className="text-yellow-800">⚠️ Upozornenie:</span> Počas sviatkov je zdravotná starostlivosť poskytovaná v čase 08:00 – 20:00 hod.
                 </p>
               </div>
             </div>

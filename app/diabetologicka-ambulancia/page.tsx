@@ -1,5 +1,6 @@
 import Benefits from "../components/Benefits";
 import ZP from "../components/ZP";
+import { Fragment } from "react";
 
 import { Metadata } from "next";
 
@@ -34,11 +35,16 @@ export default function DiabetologickaAmbulancia() {
             </p>
           </div>
 
+          <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200 shadow-sm mb-8">
+              <h3 className="text-xl font-semibold mb-2 text-yellow-800">Objednajte sa na vyšetrenie</h3>
+              <p className="text-yellow-700">Na vyšetrenie sa môžete od 02.04.2024 objednať telefonicky počas ordinačných hodín.</p>
+            </div>
+
           <section className="mb-12">
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm mb-8">
               <div className="space-y-3">
-                <p className="flex items-center"><span className="font-semibold min-w-[140px]">Poskytovateľ:</span> Zdravá župa, s.r.o.</p>
-                <p className="flex items-center"><span className="font-semibold min-w-[140px]">Adresa ambulancie:</span> Študentská 3579/16, 917 08 Trnava</p>
+                <p className="flex items-center"><span className="font-semibold min-w-[240px]">Poskytovateľ:</span> Zdravá župa, s.r.o.</p>
+                <p className="flex items-center"><span className="font-semibold min-w-[240px]">Adresa ambulancie:</span> Študentská 3579/16, 917 08 Trnava</p>
               </div>
             </div>
 
@@ -67,92 +73,113 @@ export default function DiabetologickaAmbulancia() {
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-primary flex items-center gap-2">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                ORDINAČNÉ HODINY
+              </h2>
+              <p className="mb-4 text-gray-600 italic">platnosť od: 01.09.2024</p>
+              <div className="grid grid-cols-2 gap-2">
+                {[
+                  ["Pondelok", "08:00 – 18:00"],
+                  ["Utorok", "14:00 – 18:00"],
+                  ["Streda", "7:30 – 14:00"],
+                  ["Štvrtok", "7:30 – 14:00"],
+                  ["Piatok", "7:30 – 11:00"],
+                  ["Sobota", "neordinuje"],
+                  ["Nedeľa", "neordinuje"]
+                ].map(([day, hours], i) => (
+                  <Fragment key={i}>
+                    <div className="font-medium bg-gray-50 p-2 rounded">{day}:</div>
+                    <div className="bg-gray-50 p-2 rounded text-primary">{hours}</div>
+                  </Fragment>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-6 mb-8">
               <h2 className="text-2xl font-semibold mb-4 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM DIABETOLOGICKEJ AMBULANCIE</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="border-b-2 border-primary">
                       <th className="text-left p-3 bg-gray-50">Názov výkonu</th>
-                      <th className="text-right p-3 bg-gray-50">Cena</th>
+                      <th className="text-right p-3 bg-gray-50 w-32">Cena</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Komplexné vstupné diabetologické vyšetrenie (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
-                      <td className="text-right p-3">40,- €</td>
+                      <td className="text-right p-3 w-32">40,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Kontrolné diabetologické vyšetrenie (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
-                      <td className="text-right p-3">25,- €</td>
+                      <td className="text-right p-3 w-32">25,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie glykémie glukomerom na požiadanie (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
-                      <td className="text-right p-3">1,- €</td>
+                      <td className="text-right p-3 w-32">1,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Glukóza v prášku na OGTT (75g glukózy) (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
-                      <td className="text-right p-3">2,- €</td>
+                      <td className="text-right p-3 w-32">2,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Glukóza nápoj s príchoťou na OGTT (75g glukózy) (na žiadosť pacienta nad rámec úhrady ZP, samoplatca)</td>
-                      <td className="text-right p-3">8,- €</td>
+                      <td className="text-right p-3 w-32">8,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Diabetická knižka</td>
-                      <td className="text-right p-3">1,- €</td>
+                      <td className="text-right p-3 w-32">1,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Potvrdenie do lietadla v angličtine</td>
-                      <td className="text-right p-3">10,- €</td>
+                      <td className="text-right p-3 w-32">10,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
-                      <td className="p-3">Odber biologického materiálu (na žiadosť pacienta nad rámec úhrady ZP, samoplatca, bez ceny vlastného vyšetrenia)</td>
-                      <td className="text-right p-3">15,- €</td>
+                      <td className="p-3">Odber biologického materiálu (na ��iadosť pacienta nad rámec úhrady ZP, samoplatca, bez ceny vlastného vyšetrenia)</td>
+                      <td className="text-right p-3 w-32">15,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Ožarovanie rany lampou Bioptron: 1 impulz / 2 minúty</td>
-                      <td className="text-right p-3">2,- €</td>
+                      <td className="text-right p-3 w-32">2,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Posudok špecialistu (pracovná spôsobilosť pred nástupom do zamestnania, na vlastnú žiadosť pacienta)</td>
-                      <td className="text-right p-3">20,- €</td>
+                      <td className="text-right p-3 w-32">20,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vystavenie kópie lekárskej správy na žiadosť pacienta (originál je súčasťou zdravotného výkonu)</td>
-                      <td className="text-right p-3">1,- €</td>
+                      <td className="text-right p-3 w-32">1,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyhotovenie iných fotokópií - sadzba za 1 stranu formátu A4</td>
-                      <td className="text-right p-3">1,- €</td>
+                      <td className="text-right p-3 w-32">1,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie CRP (výsledok na počkanie)</td>
-                      <td className="text-right p-3">5,- €</td>
+                      <td className="text-right p-3 w-32">5,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie INR (výsledok na počkanie)</td>
-                      <td className="text-right p-3">5,- €</td>
+                      <td className="text-right p-3 w-32">5,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">EKG vyšetrenie</td>
-                      <td className="text-right p-3">15,- €</td>
+                      <td className="text-right p-3 w-32">15,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Popis EKG vyšetrenia</td>
-                      <td className="text-right p-3">5,- €</td>
+                      <td className="text-right p-3 w-32">5,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">ABI index (dôležitý rizikový marker ischemickej choroby dolných končatín – upchávanie tepien, predpovedá pravdepodobnosť výskytu srdcového infarktu alebo cievnej mozgovej príhody, vhodný pre rizikové skupiny fajčiari, diabetici)</td>
-                      <td className="text-right p-3">30,- €</td>
+                      <td className="text-right p-3 w-32">30,- €</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-
-            <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200 shadow-sm mb-8">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-800">Objednajte sa na vyšetrenie</h3>
-              <p className="text-yellow-700">Na vyšetrenie sa môžete od 02.04.2024 objednať telefonicky počas ordinačných hodín.</p>
             </div>
           </section>
 
