@@ -72,13 +72,13 @@ export default function AmbulantnaPohotovostPage() {
                 <table className="w-full border-collapse">
                   <tbody>
                     {[
-                      { day: 'Pondelok', hours: '16:00 – 22:00' },
-                      { day: 'Utorok', hours: '16:00 – 22:00' },
-                      { day: 'Streda', hours: '16:00 – 22:00' },
-                      { day: 'Štvrtok', hours: '16:00 – 22:00' },
-                      { day: 'Piatok', hours: '16:00 – 22:00' },
-                      { day: 'Sobota', hours: '07:00 – 22:00' },
-                      { day: 'Nedeľa', hours: '07:00 – 22:00' },
+                      { day: 'Pondelok', hours: '16:00 – 20:00' },
+                      { day: 'Utorok', hours: '16:00 – 20:00' },
+                      { day: 'Streda', hours: '16:00 – 20:00' },
+                      { day: 'Štvrtok', hours: '16:00 – 20:00' },
+                      { day: 'Piatok', hours: '16:00 – 20:00' },
+                      { day: 'Sobota', hours: '08:00 – 20:00' },
+                      { day: 'Nedeľa', hours: '08:00 – 20:00' },
                     ].map((item, i) => (
                       <tr key={i} className="border-b hover:bg-gray-50 transition-colors">
                         <td className="p-3 font-medium">{item.day}</td>

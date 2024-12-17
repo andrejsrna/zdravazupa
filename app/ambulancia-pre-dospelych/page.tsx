@@ -24,12 +24,62 @@ export default function AmbulanciaPreDospelych() {
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-8 text-primary">Ambulancia pre dospelých</h1>
 
-        <div className="grid gap-8 grid-cols-1 lg:grid-cols-3 mb-12">
-          <section className="lg:col-span-2 bg-white rounded-xl shadow-lg p-8 transform hover:scale-[1.02] transition-transform">
-            <h2 className="text-3xl font-semibold mb-6 text-primary flex items-center gap-2">
-              <span className="inline-block w-2 h-8 bg-primary rounded-full"></span>
-              OTVORILI SME PRE VÁS NOVÚ AMBULANCIU
+        <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 mb-12">
+          <section className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <h2 className="text-2xl font-semibold mb-6 text-primary flex items-center gap-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              ONLINE OBJEDNÁVKY
             </h2>
+            <div className="grid grid-cols-1 gap-4">
+              <a href="https://www.objednatvysetrenie.sk/objednavka-vysetrenia.html?page_id=84263&zid=143417&druh_vysetrenia_id=26a5fa93-548c-432d-abad-e905c8350c9b" 
+                 target="_blank"
+                 className="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                <div className="bg-primary rounded-full p-2 mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                  </svg>
+                </div>
+                <span className="font-medium">Všeobecné vyšetrenie, konzultácie</span>
+              </a>
+              
+              <a href="https://www.objednatvysetrenie.sk/objednavka-vysetrenia.html?page_id=84263&zid=143417&druh_vysetrenia_id=c5ea56ba-e7d9-42f0-9aa3-2534f64ac9c4" 
+                 target="_blank"
+                 className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                <div className="bg-primary rounded-full p-2 mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <span className="font-medium">Preventívne / predoperačné vyšetrenie</span>
+              </a>
+
+              <a href="https://www.objednatvysetrenie.sk/objednavka-ereceptu.html?page_id=133125&zid=143417" 
+                 target="_blank"
+                 className="flex items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                <div className="bg-primary rounded-full p-2 mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                  </svg>
+                </div>
+                <span className="font-medium">eRecept</span>
+              </a>
+
+              <a href="https://www.objednatvysetrenie.sk/objednavka-vysetrenia.html?page_id=84263&zid=143417&druh_vysetrenia_id=dff909bd-d241-4b4b-bb7b-8ffad249329b" 
+                 target="_blank"
+                 className="flex items-center p-4 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition-colors">
+                <div className="bg-primary rounded-full p-2 mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                  </svg>
+                </div>
+                <span className="font-medium">Odbery</span>
+              </a>
+            </div>
+          </section>
+
+          <section className="bg-white rounded-xl shadow-lg p-8 transform hover:scale-[1.02] transition-transform">
             <div className="space-y-3">
               <p className="text-xl font-medium bg-gradient-to-r from-primary/10 to-transparent p-2 rounded-lg">
                 MUDr. Jana Idunková, MUDr. Mariana Čapeľová
@@ -42,7 +92,9 @@ export default function AmbulanciaPreDospelych() {
               </p>
             </div>
           </section>
+        </div>
 
+        <div className="grid gap-8 grid-cols-1 lg:grid-cols-2 mb-12">
           <section className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
             <h2 className="text-2xl font-semibold mb-4 text-primary flex items-center gap-2">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,9 +120,7 @@ export default function AmbulanciaPreDospelych() {
               ))}
             </div>
           </section>
-        </div>
 
-        <div className="grid gap-8 grid-cols-1 lg:grid-cols-3 mb-12">
           <div className="bg-green-50 rounded-lg p-6 shadow-sm">
             <h2 className="text-2xl font-semibold mb-4 text-primary">Kontakt</h2>
             <div className="space-y-4">
@@ -249,7 +299,7 @@ export default function AmbulanciaPreDospelych() {
               </tbody>
             </table>
 
-            <h3 className="text-xl font-semibold mt-12 mb-6 text-primary">Cenník zdravotných výkonov nehradených z verejného zdravotného poistenia</h3>
+            <h3 className="text-xl font-semibold mt-12 mb-6 text-primary">Cenník zdravotn��ch výkonov nehradených z verejného zdravotného poistenia</h3>
             <table className="w-full">
               <thead>
                 <tr className="border-b-2 border-primary">

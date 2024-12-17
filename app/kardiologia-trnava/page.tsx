@@ -22,16 +22,6 @@ export default function KardiologickaAmbulancia() {
         <div>
           <h1 className="text-4xl font-bold mb-4 text-primary">Kardiologická ambulancia</h1>
 
-          <div className="bg-green-50 p-6 rounded-lg mb-8 border border-green-200 shadow-sm">
-            <p className="text-xl font-semibold text-green-800 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              PRIJÍMAME NOVÝCH PACIENTOV
-            </p>
-            <p className="text-lg text-green-700 mt-2">OTVORILI SME PRE VÁS NOVÚ AMBULANCIU</p>
-          </div>
-
           <section className="mb-12">
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm mb-8">
               <div className="space-y-3">
@@ -66,17 +56,17 @@ export default function KardiologickaAmbulancia() {
 
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
               <h2 className="text-2xl font-semibold mb-4 text-primary">Ordinačné hodiny</h2>
-              <p className="mb-4 text-gray-600">platnosť od: 13.02.2023</p>
+              <p className="mb-4 text-gray-600">platnosť od: 01.09.2024</p>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <tbody>
                     {[
                       { day: 'Pondelok', hours: '15:00 – 19:00' },
-                      { day: 'Utorok', hours: '15:00 – 19:00' },
-                      { day: 'Streda', hours: '8:00 – 18:30' },
+                      { day: 'Utorok', hours: '7:30 – 12:00, 12:30 – 18:30' },
+                      { day: 'Streda', hours: '7:30 – 12:00, 12:30 – 18:30' },
                       { day: 'Štvrtok', hours: 'neordinuje' },
                       { day: 'Piatok', hours: 'neordinuje' },
-                      { day: 'Sobota', hours: '8:00 - 18:00' },
+                      { day: 'Sobota', hours: '8:00 – 11:30, 12:00 – 14:00' },
                       { day: 'Nedeľa', hours: 'neordinuje' },
                     ].map((item, i) => (
                       <tr key={i} className="border-b hover:bg-gray-50 transition-colors">

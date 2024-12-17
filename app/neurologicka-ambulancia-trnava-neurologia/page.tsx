@@ -22,18 +22,6 @@ export default function NeurologickaAmbulancia() {
         <div>
           <h1 className="text-4xl font-bold mb-4 text-primary">Neurologická ambulancia</h1>
 
-          <div className="bg-green-50 p-6 rounded-lg mb-8 border border-green-200 shadow-sm">
-            <p className="text-xl font-semibold text-green-800 flex items-center">
-              <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              PRIJÍMAME NOVÝCH PACIENTOV
-            </p>
-            <p className="text-lg text-green-700 mt-2">
-              OTVORILI SME PRE VÁS OD 01.08.2023 NOVÚ AMBULANCIU
-            </p>
-          </div>
-
           <section className="mb-12">
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm mb-8">
               <div className="space-y-3">
