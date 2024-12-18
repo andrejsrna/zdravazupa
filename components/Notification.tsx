@@ -14,7 +14,6 @@ export default function Notification() {
   const [notifications, setNotifications] = useState<Notification[]>([])
   const [showNotifications] = useState(true)
   const [dismissedNotifications, setDismissedNotifications] = useState<string[]>(() => {
-    // Load dismissed notifications from localStorage on initial render
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('dismissedNotifications')
       return saved ? JSON.parse(saved) : []
@@ -25,26 +24,30 @@ export default function Notification() {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const res = await fetch('/api/notifications/public')
-        const data = await res.json()
+        const res = await fetch('/api/notifications/public', {
+          cache: 'no-store',
+          next: { revalidate: 0 }
+        })
         
-        if (data && data.length > 0) {
-          // Filter out expired and dismissed notifications
-          const now = new Date()
-          const activeNotifications = data.filter((notification: Notification) => {
-            return notification.active && 
-                   (!notification.expiresAt || new Date(notification.expiresAt) > now) &&
-                   !dismissedNotifications.includes(notification.id)
-          })
-          setNotifications(activeNotifications)
+        if (!res.ok) {
+          console.error('Failed to fetch notifications')
+          return
         }
+        
+        const data = await res.json()
+        const activeNotifications = data.filter((notification: Notification) => {
+          const now = new Date()
+          return notification.active && 
+                 (!notification.expiresAt || new Date(notification.expiresAt) > now) &&
+                 !dismissedNotifications.includes(notification.id)
+        })
+        setNotifications(activeNotifications)
       } catch (error) {
         console.error('Error fetching notifications:', error)
       }
     }
 
     fetchNotifications()
-    // Refresh notifications every minute
     const interval = setInterval(fetchNotifications, 60000)
     return () => clearInterval(interval)
   }, [dismissedNotifications])
