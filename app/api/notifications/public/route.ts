@@ -3,13 +3,12 @@ import prisma from '@/lib/prisma'
 
 export async function GET() {
   try {
-    const now = new Date()
     const notifications = await prisma.notification.findMany({
       where: {
         active: true,
         OR: [
           { expiresAt: null },
-          { expiresAt: { gt: now } }
+          { expiresAt: { gt: new Date() } }
         ]
       },
       orderBy: {

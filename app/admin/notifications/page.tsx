@@ -31,12 +31,33 @@ export default function NotificationsAdminPage() {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const res = await fetch('/api/notifications')
+        console.log('Fetching notifications...') // Debug log
+        const res = await fetch('/api/notifications', {
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+        
+        if (!res.ok) {
+          console.error('Failed to fetch notifications:', res.status)
+          if (res.status === 401) {
+            router.push('/admin/login')
+          }
+          return
+        }
+        
         const data = await res.json()
-        setNotifications(data)
+        console.log('Received data:', data) // Debug log
+        
+        // Handle both array and object responses
+        const notificationsArray = Array.isArray(data) ? data : data.notifications || []
+        console.log('Processed notifications:', notificationsArray) // Debug log
+        
+        setNotifications(notificationsArray)
         setLoading(false)
       } catch (error) {
-        console.error('Chyba pri načítaní notifikácií:', error)
+        console.error('Error fetching notifications:', error)
         setLoading(false)
       }
     }
@@ -44,7 +65,7 @@ export default function NotificationsAdminPage() {
     if (session) {
       fetchNotifications()
     }
-  }, [session])
+  }, [session, router])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -173,7 +194,7 @@ export default function NotificationsAdminPage() {
 
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Aktuálne notifikácie</h2>
-        {Array.isArray(notifications) && notifications.length > 0 ? (
+        {notifications && notifications.length > 0 ? (
           notifications.map((notification) => (
             <div
               key={notification.id}

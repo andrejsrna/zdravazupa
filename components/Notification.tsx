@@ -35,7 +35,11 @@ export default function Notification() {
         }
         
         const data = await res.json()
-        const activeNotifications = data.filter((notification: Notification) => {
+        const notificationsArray = Array.isArray(data) 
+          ? data 
+          : data.notifications || []
+        
+        const activeNotifications = notificationsArray.filter((notification: Notification) => {
           const now = new Date()
           return notification.active && 
                  (!notification.expiresAt || new Date(notification.expiresAt) > now) &&

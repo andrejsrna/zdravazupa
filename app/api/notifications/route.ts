@@ -11,11 +11,8 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
-    console.log('Attempting to fetch notifications...')
-    
     const notifications = await prisma.notification.findMany({
       where: {
-        active: true,
         OR: [
           { expiresAt: null },
           { expiresAt: { gt: new Date() } }
@@ -33,29 +30,13 @@ export async function GET() {
         createdAt: true
       }
     })
-    
-    console.log('Fetched notifications:', notifications)
 
-    const response = { 
-      notifications: Array.isArray(notifications) ? notifications : [],
-      timestamp: new Date().toISOString()
-    }
-
-    console.log('Sending response:', response)
-    return NextResponse.json(response)
+    return NextResponse.json(notifications)
 
   } catch (error) {
-    console.error('Detailed error:', {
-      name: (error as Error)?.name,
-      message: (error as Error)?.message,
-      stack: (error as Error)?.stack
-    })
-
+    console.error('Error:', error)
     return NextResponse.json(
-      { 
-        error: 'Failed to fetch notifications',
-        details: error instanceof Error ? error.message : 'Unknown error'
-      },
+      { error: 'Failed to fetch notifications' },
       { status: 500 }
     )
   }
