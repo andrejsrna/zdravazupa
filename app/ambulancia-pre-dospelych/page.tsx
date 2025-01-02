@@ -90,6 +90,13 @@ export default function AmbulanciaPreDospelych() {
               <p className="text-gray-600 flex items-center gap-2">
                 <span className="text-primary">●</span> Adresa ambulancie: Študentská 3579/16, 917 08 Trnava
               </p>
+              <hr/>
+              <p className="text-gray-600 mt-6">
+                Ambulancia pre dospelých poskytuje komplexnú zdravotnú starostlivosť pacientom od 18 rokov veku. Zameriavame sa na preventívnu starostlivosť, diagnostiku a liečbu akútnych aj chronických ochorení, s dôrazom na individuálny prístup ku každému pacientovi.
+              </p>
+              <p className="text-gray-600 mt-4">
+                Naša ambulancia je vybavená moderným zdravotníckym zariadením a poskytuje široké spektrum vyšetrení vrátane preventívnych prehliadok, predoperačných vyšetrení, EKG vyšetrení a základných laboratórnych odberov. Kladieme dôraz na prevenciu a včasnú diagnostiku ochorení.
+              </p>
             </div>
           </section>
         </div>
@@ -160,6 +167,9 @@ export default function AmbulanciaPreDospelych() {
                   <a href="mailto:sestra@zdravazupa.sk" className="font-semibold hover:text-primary transition-colors">sestra@zdravazupa.sk</a>
                 </div>
               </div>
+              <div className="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-lg">
+                <p className="text-blue-800">V prípade, že Vám nedvíhame telefón alebo hneď neodpovedáme na email, momentálne sme zaneprázdnení starostlivosťou o pacientov. Prosím, skúste nás kontaktovať neskôr alebo nám zanechajte správu a my sa Vám ozveme hneď, ako to bude možné.</p>
+              </div>
             </div>
           </div>
 
@@ -188,7 +198,7 @@ export default function AmbulanciaPreDospelych() {
               <tbody>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Prehliadka a posudok o zdrav. spôsobilosti na vedenie motorového vozidla I. skup.</td>
-                  <td className="text-right p-3">20,- €</td>
+                  <td className="text-right p-3 w-40">20,- €</td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
                   <td className="p-3">Prehliadka a posudok o zdrav. spôsobilosti na vedenie motorového vozidla II. skup.</td>

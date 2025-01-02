@@ -105,23 +105,23 @@ export default function AmbulantnaPohotovostPage() {
                   <tbody>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Poplatok v APS v zmysle zákona č.577/2004 Z.z.</td>
-                      <td className="text-right p-3">2,- €</td>
+                      <td className="text-right p-3 w-40">2,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie CRP (výsledok na počkanie)</td>
-                      <td className="text-right p-3">8,- €</td>
+                      <td className="text-right p-3 w-40">8,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie moču (výsledok na počkanie, hodnoty: kyselina askorbová, bilirubín, krv, glukóza, ketóny, leukocyty, nitrity, pH, bielkovina, špecifická hmotnosť, urobilinogen)</td>
-                      <td className="text-right p-3">5,- €</td>
+                      <td className="text-right p-3 w-40">5,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie CRP bez indikácie lekára na vlastnú žiadosť rodiča (výsledok na počkanie)</td>
-                      <td className="text-right p-3">15,- €</td>
+                      <td className="text-right p-3 w-40">15,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">Vyšetrenie moču bez indikácie lekára na vlastnú žiadosť rodiča (výsledok na počkanie, hodnoty: kyselina askorbová, bilirubín, krv, glukóza, ketóny, leukocyty, nitrity, pH, bielkovina, špecifická hmotnosť, urobilinogen)</td>
-                      <td className="text-right p-3">8,- €</td>
+                      <td className="text-right p-3 w-40">8,- €</td>
                     </tr>
                   </tbody>
                 </table>
@@ -132,39 +132,39 @@ export default function AmbulantnaPohotovostPage() {
                   <tbody>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">do 5 rokov života</td>
-                      <td className="text-right p-3">30,- €</td>
+                      <td className="text-right p-3 w-40">30,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">nad 5 rokov života</td>
-                      <td className="text-right p-3">25,- €</td>
+                      <td className="text-right p-3 w-40">25,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">krátka správa lekára APS pre ošetrujúceho lekára</td>
-                      <td className="text-right p-3">5,- €</td>
+                      <td className="text-right p-3 w-40">5,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">vyšetrenie CRP (výsledok na počkanie)</td>
-                      <td className="text-right p-3">15,- €</td>
+                      <td className="text-right p-3 w-40">15,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">odber krvi</td>
-                      <td className="text-right p-3">10,- €</td>
+                      <td className="text-right p-3 w-40">10,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">odber moču</td>
-                      <td className="text-right p-3">6,- €</td>
+                      <td className="text-right p-3 w-40">6,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">podanie injekcie do svalu, podanie čípku, nebulizácia alebo inhalačné podanie liečiva</td>
-                      <td className="text-right p-3">7,- €</td>
+                      <td className="text-right p-3 w-40  ">7,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">podanie injekcie do žily</td>
-                      <td className="text-right p-3">10,- €</td>
+                      <td className="text-right p-3 w-40">10,- €</td>
                     </tr>
                     <tr className="border-b hover:bg-gray-50">
                       <td className="p-3">extrakcia kliešťa, ošetrenie malej rany</td>
-                      <td className="text-right p-3">7,- €</td>
+                      <td className="text-right p-3 w-40">7,- €</td>
                     </tr>
                   </tbody>
                 </table>
