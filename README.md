@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zdravá Župa - Healthcare Services Portal
+
+This is the official repository for [zdravazupa.sk](https://zdravazupa.sk), a comprehensive healthcare services portal for the Trnava region in Slovakia. The website serves as a central hub for various medical facilities and services operated by Zdravá župa, s. r. o.
+
+## Project Overview
+
+The portal is built using modern web technologies:
+- Next.js 13+ (React Framework)
+- TypeScript
+- Tailwind CSS
+- Server-Side Rendering (SSR)
+
+## Features
+
+- 🏥 Medical Facilities Information
+  - Emergency Services for Children and Adolescents
+  - Adult Healthcare Services
+  - Specialized Medical Services (Cardiology, Neurology, Diabetology)
+  - Home Nursing Care Services (ADOS)
+
+- 📱 Responsive Design
+  - Mobile-first approach
+  - Modern UI/UX
+  - Accessible interface
+
+- 🌐 SEO Optimized
+  - Meta tags management
+  - OpenGraph support
+  - Semantic HTML structure
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+zdravazupa/
+├── app/                    # Next.js 13+ app directory
+│   ├── components/        # Shared components
+│   └── [routes]/         # Page routes
+├── public/                # Static files
+└── styles/                # Global styles
+```
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
+For more information about Zdravá župa services, visit [zdravazupa.sk](https://zdravazupa.sk) or contact the respective facilities directly through the website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved. © Zdravá župa, s. r. o.
