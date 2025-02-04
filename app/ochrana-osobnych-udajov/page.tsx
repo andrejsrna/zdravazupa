@@ -84,13 +84,6 @@ export default function OchranaOsobnychUdajov() {
               <p>konateľka</p>
             </div>
           </section>
-
-          <footer className="text-center text-sm text-muted-foreground">
-            <p>Zriaďovateľ: Trnavský samosprávny kraj</p>
-            <p>Kontakt: Zdravá župa, s. r. o., Starohájska 10 917 01 Trnava</p>
-            <p>IČO: 53708997, DIČ: 2121488468</p>
-            <p>Okresný súd Trnava, oddiel: Sro, vložka č. 48993/T</p>
-          </footer>
         </div>
       </div>
     </div>

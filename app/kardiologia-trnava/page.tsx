@@ -25,8 +25,8 @@ export default function KardiologickaAmbulancia() {
           <section className="mb-12">
             <div className="bg-blue-50 rounded-lg p-6 shadow-sm mb-8">
               <div className="space-y-3">
-                <p className="flex items-center"><span className="font-semibold min-w-[140px]">Poskytovateľ:</span> Zdravá župa, s.r.o.</p>
-                <p className="flex items-center"><span className="font-semibold min-w-[140px]">Adresa ambulancie:</span> Študentská 3579/16, 917 08 Trnava</p>
+                <p className="flex items-center"><span className="font-semibold w-[200px]">Poskytovateľ:</span> Zdravá župa, s.r.o.</p>
+                <p className="flex items-center"><span className="font-semibold w-[200px]">Adresa:</span> Študentská 3579/16, <br/>917 08 Trnava</p>
               </div>
             </div>
 
@@ -92,7 +92,7 @@ export default function KardiologickaAmbulancia() {
                 <thead>
                   <tr className="bg-primary/5">
                     <th className="text-left p-4 text-primary font-semibold">Úkon</th>
-                    <th className="text-right p-4 text-primary font-semibold">Cena</th>
+                    <th className="text-right p-4 w-40 text-primary font-semibold">Cena</th>
                   </tr>
                 </thead>
                 <tbody>
