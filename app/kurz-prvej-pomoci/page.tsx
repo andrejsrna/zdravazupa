@@ -19,6 +19,31 @@ export default function KurzPrvejPomoci() {
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Kurz prvej pomoci</h1>
 
         <div className="grid gap-8 max-w-4xl mx-auto">
+          <section className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-primary">
+            <h2 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.17 15.74a7.99 7.99 0 0 0 0-7.48M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z M3.83 8.26a8 8 0 0 1 0 7.48" />
+              </svg>
+              Najbližší termín kurzu pre laickú verejnosť v Trnave
+            </h2>
+            <div className="space-y-4">
+              <p className="text-gray-700">
+                <span className="font-semibold">Dátum a čas:</span> 08.03.2025 (sobota) o 8:30 hod
+              </p>
+              <p className="text-gray-700">
+                <span className="font-semibold">Miesto konania:</span> Študentská ulica č.16, Trnava
+              </p>
+              <div className="bg-white bg-opacity-50 p-4 rounded-lg">
+                <p className="text-gray-700">
+                  V prípade záujmu zašlite vyplnenú prihlášku na{' '}
+                  <a href="mailto:kurzypp@zdravazupa.sk" className="text-primary hover:underline">kurzypp@zdravazupa.sk</a>
+                  {' '}alebo nás kontaktujte na{' '}
+                  <a href="tel:+421910718277" className="text-primary hover:underline">+421 910 718 277</a>.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <section className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <FileText className="w-6 h-6 text-primary" />
