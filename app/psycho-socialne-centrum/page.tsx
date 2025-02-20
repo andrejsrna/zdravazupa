@@ -35,7 +35,7 @@ export default function PsychoSocialneCentrum() {
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 leading-relaxed mb-4">
-              Trnavský kraj postupne spúšťa fungovanie novovybudovaného Psycho-sociálneho centra, ktoré sídli v areáli zdravotníckeho zariadenia Zdravá župa na Študentskej ulici v Trnave.
+              Trnavský kraj postupne otvára novovybudované Psycho-sociálne centrum, ktoré sídli v areáli zdravotníckeho zariadenia Zdravá župa na Študentskej ulici v Trnave.
             </p>
             <div className="bg-primary/5 p-4 rounded-lg my-6">
               <p className="text-primary font-medium">
@@ -98,7 +98,7 @@ export default function PsychoSocialneCentrum() {
 
         <section className="mb-12 bg-white rounded-xl shadow-lg p-8">
           <blockquote className="border-l-4 border-primary pl-4 italic text-gray-600">
-            "Zdravotníctvo je pre mňa dôležitou županskou témou a do tejto oblasti určite patrí aj starostlivosť o duševném zdraví. Považujem za nevyhnutné sa o téme duševného zdravia rozprávať nahlas."
+            "Zdravotníctvo je pre mňa dôležitou županskou témou a do tejto oblasti určite patrí aj starostlivosť o duševné zdravie. Považujem za nevyhnutné sa o téme duševného zdravia rozprávať nahlas."
             <footer className="mt-2 font-medium text-primary">- Jozef Viskupič, trnavský župan</footer>
           </blockquote>
         </section>
