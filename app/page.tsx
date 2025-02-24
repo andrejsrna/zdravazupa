@@ -3,9 +3,14 @@ import Benefits from "./components/Benefits";
 import ZP from "./components/ZP";
 import Image from "next/image";
 import Foto from "./components/Foto";
+import KurzyPrvejPomoci from "./components/KurzyPrvejPomoci";
 export default function Home() {
   return (
+	
     <div className="min-h-screen bg-background">
+		<div className="container mx-auto px-4 py-8">
+			<KurzyPrvejPomoci />
+		</div>
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center gap-8 mb-16">

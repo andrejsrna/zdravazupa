@@ -141,6 +141,67 @@ export default function KurzPrvejPomoci() {
               <p className="text-blue-800">V prípade, že Vám nedvíhame telefón alebo hneď neodpovedáme na email, momentálne sme na Kurze prvej pomoci, spätne Vás budeme kontaktovať.</p>
             </div>
           </section>
+          <section className="bg-white p-6 md:p-8 rounded-xl shadow-lg mt-8">
+            <h2 className="text-2xl font-semibold mb-6">Často kladené otázky o kurze prvej pomoci</h2>
+            
+            <div className="space-y-4">
+              <details className="group bg-gray-50 rounded-lg">
+                <summary className="flex justify-between items-center cursor-pointer p-4">
+                  <h3 className="font-medium">Čo je kurz prvej pomoci?</h3>
+                  <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="p-4 pt-0">
+                  <p className="text-gray-600">
+                    Kurz prvej pomoci je akreditované školenie, kde sa účastníci naučia základné postupy poskytovania prvej pomoci. Zahŕňa teoretickú aj praktickú časť, kde si účastníci osvoja život zachraňujúce úkony, kardiopulmonálnu resuscitáciu, ošetrenie rán a krvácania, stabilizovanú polohu a ďalšie dôležité zručnosti.
+                  </p>
+                </div>
+              </details>
+
+              <details className="group bg-gray-50 rounded-lg">
+                <summary className="flex justify-between items-center cursor-pointer p-4">
+                  <h3 className="font-medium">Pre koho je kurz určený?</h3>
+                  <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="p-4 pt-0">
+                  <p className="text-gray-600">
+                    Kurz je vhodný pre všetkých, ktorí chcú byť pripravení pomôcť v núdzových situáciách. Je ideálny pre zamestnancov firiem, pedagogických pracovníkov, športových trénerov, ale aj pre širokú verejnosť. Špeciálne kurzy organizujeme aj pre zdravotníckych pracovníkov a profesionálov v oblasti záchranných služieb.
+                  </p>
+                </div>
+              </details>
+
+              <details className="group bg-gray-50 rounded-lg">
+                <summary className="flex justify-between items-center cursor-pointer p-4">
+                  <h3 className="font-medium">Aké sú výhody absolvovania kurzu?</h3>
+                  <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="p-4 pt-0">
+                  <p className="text-gray-600">
+                    Absolventi kurzu získajú sebadôveru a schopnosť správne reagovať v krízových situáciách. Naučia sa rozpoznať príznaky život ohrozujúcich stavov a poskytnúť adekvátnu prvú pomoc. Po úspešnom absolvovaní kurzu získajú certifikát s platnosťou 2 roky. Tieto znalosti môžu byť rozhodujúce pri záchrane života v kritických momentoch.
+                  </p>
+                </div>
+              </details>
+
+              <details className="group bg-gray-50 rounded-lg">
+                <summary className="flex justify-between items-center cursor-pointer p-4">
+                  <h3 className="font-medium">Ako prebieha kurz prvej pomoci?</h3>
+                  <svg className="w-5 h-5 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="p-4 pt-0">
+                  <p className="text-gray-600">
+                    Kurz kombinuje teoretickú výučbu s praktickým nácvikom. Účastníci sa najprv oboznámia s teoretickými základmi prvej pomoci, následne si všetky postupy prakticky vyskúšajú na moderných výučbových modeloch. Kurz vedú skúsení lektori s dlhoročnou praxou v záchrannej zdravotnej službe. Dôraz sa kladie na praktické zvládnutie život zachraňujúcich úkonov.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </section>
         </div>
       </div>
     </div>
