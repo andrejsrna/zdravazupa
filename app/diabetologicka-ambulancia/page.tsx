@@ -1,6 +1,6 @@
+import { Fragment } from "react";
 import Benefits from "../components/Benefits";
 import ZP from "../components/ZP";
-import { Fragment } from "react";
 
 import { Metadata } from "next";
 
@@ -25,7 +25,7 @@ export default function DiabetologickaAmbulancia() {
       <div className="container mx-auto px-4 py-8">
         <div>
           <h1 className="text-4xl font-bold mb-4 text-primary">Diabetologická ambulancia</h1>
-          
+
           <div className="bg-green-50 p-6 rounded-lg mb-8 border border-green-200 shadow-sm">
             <p className="text-xl font-semibold text-green-800 flex items-center">
               <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -79,14 +79,14 @@ export default function DiabetologickaAmbulancia() {
                 </svg>
                 ORDINAČNÉ HODINY
               </h2>
-              <p className="mb-4 text-gray-600 italic">platnosť od: 01.09.2024</p>
+              <p className="mb-4 text-gray-600 italic">platnosť od: 01.02.2025</p>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  ["Pondelok", "08:00 – 18:00"],
-                  ["Utorok", "14:00 – 18:00"],
-                  ["Streda", "7:30 – 14:00"],
-                  ["Štvrtok", "7:30 – 14:00"],
-                  ["Piatok", "7:30 – 11:00"],
+                  ["Pondelok", "07:00 – 12:30hod 13:00 – 18:00"],
+                  ["Utorok", "neordinuje"],
+                  ["Streda", "07:00 – 11:00hod 11:30 – 14:30"],
+                  ["Štvrtok", "07:00 – 11:00hod 11:30 – 14:30"],
+                  ["Piatok", "07:00 – 11:00hod"],
                   ["Sobota", "neordinuje"],
                   ["Nedeľa", "neordinuje"]
                 ].map(([day, hours], i) => (
