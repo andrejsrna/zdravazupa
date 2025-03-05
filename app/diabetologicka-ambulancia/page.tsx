@@ -82,11 +82,11 @@ export default function DiabetologickaAmbulancia() {
               <p className="mb-4 text-gray-600 italic">platnosť od: 01.02.2025</p>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  ["Pondelok", "07:00 – 12:30hod 13:00 – 18:00"],
+                  ["Pondelok", "07:00 – 12:30 | 13:00 – 18:00"],
                   ["Utorok", "neordinuje"],
-                  ["Streda", "07:00 – 11:00hod 11:30 – 14:30"],
-                  ["Štvrtok", "07:00 – 11:00hod 11:30 – 14:30"],
-                  ["Piatok", "07:00 – 11:00hod"],
+                  ["Streda", "07:00 – 11:00 | 11:30 – 14:30"],
+                  ["Štvrtok", "07:00 – 11:00 | 11:30 – 14:30"],
+                  ["Piatok", "07:00 – 11:00"],
                   ["Sobota", "neordinuje"],
                   ["Nedeľa", "neordinuje"]
                 ].map(([day, hours], i) => (
