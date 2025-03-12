@@ -1,16 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import Benefits from "./components/Benefits";
-import ZP from "./components/ZP";
-import Image from "next/image";
 import Foto from "./components/Foto";
-import KurzyPrvejPomoci from "./components/KurzyPrvejPomoci";
+import ZP from "./components/ZP";
 export default function Home() {
   return (
-	
+
     <div className="min-h-screen bg-background">
-		<div className="container mx-auto px-4 py-8">
-			<KurzyPrvejPomoci />
-		</div>
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center gap-8 mb-16">
@@ -39,12 +35,12 @@ export default function Home() {
           <div className="relative container mx-auto px-4">
             <h2 className="text-3xl font-semibold mb-4">Naše zdravotnícke zariadenia</h2>
             <p className="text-muted-foreground mb-8">Poskytujeme komplexnú zdravotnú starostlivosť pod jednou strechou. Naše moderné ambulancie sú vybavené špičkovými zariadeniami a tímom skúsených odborníkov.</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { 
+                {
                   name: "Ambulancia pre dospelých",
-                  description: "Všeobecná ambulancia poskytujúca preventívnu a liečebnú starostlivosť pre dospelých pacientov.", 
+                  description: "Všeobecná ambulancia poskytujúca preventívnu a liečebnú starostlivosť pre dospelých pacientov.",
                   href: "/ambulancia-pre-dospelych",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,9 +48,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "ADOS",
-                  description: "Agentúra domácej ošetrovateľskej starostlivosti poskytuje odbornú zdravotnú starostlivosť v domácom prostredí.", 
+                  description: "Agentúra domácej ošetrovateľskej starostlivosti poskytuje odbornú zdravotnú starostlivosť v domácom prostredí.",
                   href: "/ados",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,9 +58,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "Pohotovosť pre deti a dorast",
-                  description: "Ambulantná pohotovostná služba poskytujúca neodkladnú zdravotnú starostlivosť pre deti a mladistvých.", 
+                  description: "Ambulantná pohotovostná služba poskytujúca neodkladnú zdravotnú starostlivosť pre deti a mladistvých.",
                   href: "/ambulantna-pohotovostna-sluzba-pre-deti-a-dorast",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,9 +68,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "Diabetologická ambulancia",
-                  description: "Špecializovaná ambulancia pre diagnostiku a liečbu cukrovky a jej komplikácií.", 
+                  description: "Špecializovaná ambulancia pre diagnostiku a liečbu cukrovky a jej komplikácií.",
                   href: "/diabetologicka-ambulancia",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,9 +78,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "Kardiologická ambulancia",
-                  description: "Komplexná starostlivosť o pacientov s ochoreniami srdca a cievneho systému.", 
+                  description: "Komplexná starostlivosť o pacientov s ochoreniami srdca a cievneho systému.",
                   href: "/kardiologia-trnava",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,9 +88,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "Mobilný hospic",
-                  description: "Paliatívna starostlivosť poskytovaná pacientom v terminálnom štádiu ochorenia v domácom prostredí.", 
+                  description: "Paliatívna starostlivosť poskytovaná pacientom v terminálnom štádiu ochorenia v domácom prostredí.",
                   href: "/mobilny-hospic",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,9 +98,9 @@ export default function Home() {
                     </svg>
                   )
                 },
-                { 
+                {
                   name: "Neurologická ambulancia",
-                  description: "Diagnostika a liečba ochorení nervového systému pod vedením skúsených neurológov.", 
+                  description: "Diagnostika a liečba ochorení nervového systému pod vedením skúsených neurológov.",
                   href: "/neurologicka-ambulancia-trnava-neurologia",
                   icon: (
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,33 +156,33 @@ export default function Home() {
           <p className="text-muted-foreground mb-4">Pozrite si dôležité odkazy, ktoré by vás mohli zaujímať.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { 
-                name: "Aktuálna neprítomnosť lekárov a ich zastupovanie", 
+              {
+                name: "Aktuálna neprítomnosť lekárov a ich zastupovanie",
                 href: "https://www.e-vuc.sk/e-vuc/pre-poskytovatelov-zdravotnej-starostlivosti/vsetky-nepritomnosti-v-ambulancii-v-kraji/aktualne-nepritomnosti-v-ambulancii.html?page_id=66268&kraj=406",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               },
-              { 
-                name: "Objednajte sa na vyšetrenie", 
+              {
+                name: "Objednajte sa na vyšetrenie",
                 href: "https://www.objednatvysetrenie.sk/?utm_source=evuc&utm_medium=banner&utm_campaign=evuc",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               },
-              { 
-                name: "Je Vaše dieťa choré? Neviete sa skontaktovať s jeho pediatrom?", 
+              {
+                name: "Je Vaše dieťa choré? Neviete sa skontaktovať s jeho pediatrom?",
                 href: "https://pediatridetom.sk/",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
               },
-              { 
-                name: "Zdravie – Ústredný portál verejnej správy", 
+              {
+                name: "Zdravie – Ústredný portál verejnej správy",
                 href: "https://www.slovensko.sk/sk/zivotne-situacie/zivotna-situacia/_zdravie",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
               },
-              { 
-                name: "Národný portál zdravia", 
+              {
+                name: "Národný portál zdravia",
                 href: "https://www.npz.sk",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
               },
-              { 
-                name: "Najbližšia lekáreň, ambulantná pohotovosť alebo nemocnica", 
+              {
+                name: "Najbližšia lekáreň, ambulantná pohotovosť alebo nemocnica",
                 href: "https://www.e-vuc.sk/ttsk/zdravotnictvo",
                 icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
               }
@@ -198,10 +194,10 @@ export default function Home() {
                       {link.icon}
                     </div>
                     <span className="flex-grow group-hover:text-primary transition-colors duration-300">{link.name}</span>
-                    <svg 
-                      className="w-5 h-5 opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300" 
-                      fill="none" 
-                      stroke="currentColor" 
+                    <svg
+                      className="w-5 h-5 opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300"
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
