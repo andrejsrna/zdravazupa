@@ -45,21 +45,21 @@ export default function Projekty() {
                       Zobraziť viac
                     </Link>
                   </Button>
-                  <Link 
-                    href="https://www.health.gov.sk/Clanok?plan-obnovy" 
+                  <Link
+                    href="https://www.health.gov.sk/Clanok?plan-obnovy"
                     className="block text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     Health.gov.sk - Plán obnovy a odolnosti
                   </Link>
                 </div>
               </div>
-              <div 
-                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow" 
+              <div
+                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow"
                 onClick={() => openImageLightbox(0)}
               >
-                <Image 
-                  src="/psc.jpeg" 
-                  alt="Psycho-sociálne centrum" 
+                <Image
+                  src="/psc.jpeg"
+                  alt="Psycho-sociálne centrum"
                   fill
                   className="object-contain hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -83,20 +83,20 @@ export default function Projekty() {
                     Zobraziť viac
                   </Link>
                 </Button>
-                <Link 
-                    href="https://www.health.gov.sk/Clanok?plan-obnovy" 
+                <Link
+                    href="https://www.health.gov.sk/Clanok?plan-obnovy"
                     className="block pt-4 text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     Health.gov.sk - Plán obnovy a odolnosti
                   </Link>
               </div>
-              <div 
-                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow" 
+              <div
+                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow"
                 onClick={() => openImageLightbox(1)}
               >
-                <Image 
-                  src="/ados.jpg" 
-                  alt="ADOS Zdravá župa Trnava" 
+                <Image
+                  src="/ados.jpg"
+                  alt="ADOS Zdravá župa Trnava"
                   fill
                   className="object-contain hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -120,20 +120,20 @@ export default function Projekty() {
                     Zobraziť viac
                   </Link>
                 </Button>
-                <Link 
-                    href="https://www.health.gov.sk/Clanok?plan-obnovy" 
+                <Link
+                    href="https://www.health.gov.sk/Clanok?plan-obnovy"
                     className="block pt-4 text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     Health.gov.sk - Plán obnovy a odolnosti
                   </Link>
               </div>
-              <div 
-                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow" 
+              <div
+                className="relative aspect-[4/3] w-full rounded-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow"
                 onClick={() => openImageLightbox(2)}
               >
-                <Image 
-                  src="/moho.jpeg" 
-                  alt="Mobilný hospic Zdravá župa Trnava" 
+                <Image
+                  src="/moho.jpeg"
+                  alt="Mobilný hospic Zdravá župa Trnava"
                   fill
                   className="object-contain hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -149,20 +149,25 @@ export default function Projekty() {
                 Národný projekt Ministerstva zdravotníctva SR
               </h2>
               <div className="relative w-full max-w-2xl h-[100px] mb-6">
-                <Image 
-                  src="/posil.png" 
-                  alt="Národný projekt Ministerstva zdravotníctva SR" 
+                <Image
+                  src="/posil.png"
+                  alt="Národný projekt Ministerstva zdravotníctva SR"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <p className="mb-6 text-muted-foreground max-w-2xl">
-                Posilnenie a dobudovanie siete mobilných odberových miest.
+                Posilnenie dlhodobej zdravotnej starostlivosti
               </p>
+              <Button asChild className="w-full sm:w-auto mb-8">
+                <Link href="/posilnenie.pdf">
+                  Zobraziť viac
+                </Link>
+              </Button>
               <Button asChild className="w-full sm:w-auto">
                 <Link href="https://www.health.gov.sk/?Vyzva-Posilnenie-dlhodobej-zdravotnej-starostlivosti">
-                  Zobraziť viac
+                  Health.gov.sk - Posilnenie dlhodobej zdravotnej starostlivosti
                 </Link>
               </Button>
             </div>
