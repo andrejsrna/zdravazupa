@@ -13,14 +13,14 @@ export default function MainMenu() {
   return (
     <div className="relative">
       {/* Mobile menu button */}
-      <button 
+      <button
         className="md:hidden p-2"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <svg 
-          className="w-6 h-6" 
-          fill="none" 
-          stroke="currentColor" 
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
           viewBox="0 0 24 24"
         >
           {isMenuOpen ? (
@@ -71,6 +71,11 @@ export default function MainMenu() {
               <li>
                 <Link href="/neurologicka-ambulancia-trnava-neurologia" className="block hover:bg-primary/90 p-2 rounded" onClick={closeMenu}>
                   Neurologická ambulancia
+                </Link>
+              </li>
+              <li>
+                <Link href="psychiatricka-ambulancia" className="block hover:bg-primary/90 p-2 rounded" onClick={closeMenu}>
+                  Psychiatrická ambulancia
                 </Link>
               </li>
             </ul>
