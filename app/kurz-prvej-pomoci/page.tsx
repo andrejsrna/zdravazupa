@@ -1,5 +1,5 @@
+import { Clock, FileCheck, FileQuestion, FileSpreadsheet, FileText, Mail, MapPin, Phone } from "lucide-react";
 import { Metadata } from 'next';
-import { Phone, Mail, MapPin, Clock, FileText, FileCheck, FileQuestion, FileSpreadsheet } from "lucide-react";
 
 export const metadata: Metadata = {
   title: 'Kurz prvej pomoci | Zdravá župa',
@@ -19,30 +19,6 @@ export default function KurzPrvejPomoci() {
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Kurz prvej pomoci</h1>
 
         <div className="grid gap-8 max-w-4xl mx-auto">
-          <section className="bg-gradient-to-r from-blue-50 to-blue-100 p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-primary">
-            <h2 className="text-xl font-semibold mb-4 text-primary flex items-center gap-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.17 15.74a7.99 7.99 0 0 0 0-7.48M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z M3.83 8.26a8 8 0 0 1 0 7.48" />
-              </svg>
-              Najbližší termín kurzu pre laickú verejnosť v Trnave
-            </h2>
-            <div className="space-y-4">
-              <p className="text-gray-700">
-                <span className="font-semibold">Dátum a čas:</span> 08.03.2025 (sobota) o 8:30 hod
-              </p>
-              <p className="text-gray-700">
-                <span className="font-semibold">Miesto konania:</span> Študentská ulica č.16, Trnava
-              </p>
-              <div className="bg-white bg-opacity-50 p-4 rounded-lg">
-                <p className="text-gray-700">
-                  V prípade záujmu zašlite vyplnenú prihlášku na{' '}
-                  <a href="mailto:kurzypp@zdravazupa.sk" className="text-primary hover:underline">kurzypp@zdravazupa.sk</a>
-                  {' '}alebo nás kontaktujte na{' '}
-                  <a href="tel:+421910718277" className="text-primary hover:underline">+421 910 718 277</a>.
-                </p>
-              </div>
-            </div>
-          </section>
 
           <section className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
@@ -50,14 +26,14 @@ export default function KurzPrvejPomoci() {
               Dôležité dokumenty
             </h2>
             <div className="flex flex-col gap-3">
-              <a href="/AKREDITACIA-skolenia.pdf" 
+              <a href="/AKREDITACIA-skolenia.pdf"
                  className="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                 <div className="bg-primary rounded-full p-2 mr-4">
                   <FileCheck className="w-6 h-6 text-white" />
                 </div>
                 <span className="font-medium">Rozhodnutie o vydaní osvedčenia o akreditácii</span>
               </a>
-              
+
               <a href="/skusobny_poriadok.pdf"
                  className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
                 <div className="bg-primary rounded-full p-2 mr-4">
@@ -120,15 +96,15 @@ export default function KurzPrvejPomoci() {
             <div className="space-y-4">
               <p className="text-lg font-medium">PhDr. Angelika Dudžáková, PhD., MPH</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="tel:0910718277" 
+                <a
+                  href="tel:0910718277"
                   className="flex items-center gap-2 text-primary hover:underline"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0" />
                   0910 718 277
                 </a>
-                <a 
-                  href="mailto:kurzypp@zdravazupa.sk" 
+                <a
+                  href="mailto:kurzypp@zdravazupa.sk"
                   className="flex items-center gap-2 text-primary hover:underline"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
@@ -136,14 +112,14 @@ export default function KurzPrvejPomoci() {
                 </a>
               </div>
             </div>
-            
+
             <div className="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-lg">
               <p className="text-blue-800">V prípade, že Vám nedvíhame telefón alebo hneď neodpovedáme na email, momentálne sme na Kurze prvej pomoci, spätne Vás budeme kontaktovať.</p>
             </div>
           </section>
           <section className="bg-white p-6 md:p-8 rounded-xl shadow-lg mt-8">
             <h2 className="text-2xl font-semibold mb-6">Často kladené otázky o kurze prvej pomoci</h2>
-            
+
             <div className="space-y-4">
               <details className="group bg-gray-50 rounded-lg">
                 <summary className="flex justify-between items-center cursor-pointer p-4">
