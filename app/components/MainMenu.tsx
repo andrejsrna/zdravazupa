@@ -78,6 +78,11 @@ export default function MainMenu() {
                   Psychiatrická ambulancia
                 </Link>
               </li>
+              <li>
+                <Link href="ambulancia-klinickej-psychologie" className="block hover:bg-primary/90 p-2 rounded" onClick={closeMenu}>
+                  Ambulancia klinickej psychológie
+                </Link>
+              </li>
             </ul>
           </li>
           <li>
