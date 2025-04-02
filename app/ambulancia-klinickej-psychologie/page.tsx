@@ -122,11 +122,8 @@ export default function ADOS() {
           </section>
         </div>
 
-        <ZP />
-        <Benefits />
-
         <section className="bg-white rounded-xl shadow-lg p-8 mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-primary">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM AGENTÚRY DOMÁCEJ OŠETROVATEĽSKEJ STAROSTLIVOSTI</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-primary uppercase">CENNÍK ZDRAVOTNÝCH VÝKONOV A SLUŽIEB HRADENÝCH PACIENTOM ambulancie klinickej psychológie</h2>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -184,6 +181,10 @@ export default function ADOS() {
             </table>
           </div>
         </section>
+
+        <ZP />
+        <Benefits />
+
       </div>
     </div>
   );
